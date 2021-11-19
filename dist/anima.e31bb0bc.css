@@ -1,0 +1,158 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Fira+Sans:600|Barlow:400,700,500,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root { 
+  --abbey: #4f4f4f;
+  --abbey-2: #4f4f4fa6;
+  --alabaster: #fbfbfb;
+  --armadillo: #44423e;
+  --armadillo-2: #44423ee6;
+  --black: #000000;
+  --black-2: #00000040;
+  --bon-jour: #e0e0e0;
+  --celeste: #d1d1d1;
+  --cod-gray: #0b0b0b73;
+  --gray: #828282;
+  --gray-2: #808080;
+  --green-white: #ebe7e0;
+  --mine-shaft: #333333;
+  --mist-gray: #c4c4c4;
+  --ronchi: #f2c245;
+  --silver: #bdbdbd;
+  --sonic-silver: #76736f;
+  --spring-wood: #f7f6f3a6;
+  --spring-wood-2: #f7f6f3;
+  --westar: #e1dbd3;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 24px;
+  --font-size-s: 22px;
+  --font-size-xs: 20px;
+  --font-size-xxs: 18px;
+  --font-size-xxxs: 16px;
+  --font-size-xxxxs: 14px;
+ 
+  --font-family-barlow: "Barlow", Helvetica;
+  --font-family-fira_sans: "Fira Sans", Helvetica;
+  --font-family-playfair_display: "Playfair Display", Helvetica;
+}
+
+.mobile-homepage-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 9154px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+.about-us {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 6161px;
+  overflow: hidden;
+  width: 1920px;
+}
+
+
+.our-work-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 9310px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.homepage-main-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 11452px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.in-news {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4908px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.mobile-in-news-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4050px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+.mobile-about-us-main-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 7347px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+.mobile-about-us-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 5195px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+
+/*# sourceMappingURL=/anima.e31bb0bc.css.map */

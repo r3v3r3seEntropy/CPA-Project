@@ -1,0 +1,11 @@
+.mobile-about-us-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 5195px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+

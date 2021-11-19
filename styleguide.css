@@ -1,0 +1,36 @@
+:root { 
+  --abbey: #4f4f4f;
+  --abbey-2: #4f4f4fa6;
+  --alabaster: #fbfbfb;
+  --armadillo: #44423e;
+  --armadillo-2: #44423ee6;
+  --black: #000000;
+  --black-2: #00000040;
+  --bon-jour: #e0e0e0;
+  --celeste: #d1d1d1;
+  --cod-gray: #0b0b0b73;
+  --gray: #828282;
+  --gray-2: #808080;
+  --green-white: #ebe7e0;
+  --mine-shaft: #333333;
+  --mist-gray: #c4c4c4;
+  --ronchi: #f2c245;
+  --silver: #bdbdbd;
+  --sonic-silver: #76736f;
+  --spring-wood: #f7f6f3a6;
+  --spring-wood-2: #f7f6f3;
+  --westar: #e1dbd3;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 24px;
+  --font-size-s: 22px;
+  --font-size-xs: 20px;
+  --font-size-xxs: 18px;
+  --font-size-xxxs: 16px;
+  --font-size-xxxxs: 14px;
+ 
+  --font-family-barlow: "Barlow", Helvetica;
+  --font-family-fira_sans: "Fira Sans", Helvetica;
+  --font-family-playfair_display: "Playfair Display", Helvetica;
+}

@@ -1,0 +1,10 @@
+.in-news {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4908px;
+  position: relative;
+  width: 1920px;
+}
+
