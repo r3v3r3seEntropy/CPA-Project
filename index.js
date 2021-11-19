@@ -3,5 +3,5 @@ import ReactDOM from "react-dom";
 import "./globals.css"
 import "./styleguide.css"
 import App from "./App";
-
+AOS.init();
 ReactDOM.render(<App />, document.getElementById("app"));

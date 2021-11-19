@@ -5,11 +5,13 @@
     "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
+    "html-react-parser": "^1.4.0",
     "parcel-bundler": "^1.12.4",
+    "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "5.2.0", 
-    "react": "^17.0.1", 
-    "styled-components": "^5.2.0"
+    "react-router-dom": "5.2.0",
+    "styled-components": "^5.2.0",
+    "tachyons-animate": "^7.0.1-1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -2,21 +2,44 @@ import React from "react";
 import styled from "styled-components";
 import { Border35pxBonJour } from "../../styledMixins";
 
-
 class Group138773 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeEllipses: 1,
+      activeEllipsesList: [],
+      inactiveEllipsesList: [],
+    };
+  }
+
+  myFunction = () => {
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 8;
+    this.setState({ activeEllipses: Math.ceil(scrolled) });
+    const actEllipses = [];
+    const inactEllipses = [];
+    for (let i = 0; i < this.state.activeEllipses; i++)
+      actEllipses.push(<Ellipse8 key={i}></Ellipse8>);
+    for (let i = 0; i <(8 - this.state.activeEllipses); i++)
+      inactEllipses.push(<Ellipse7 key={i}></Ellipse7>);
+    this.setState({ activeEllipsesList: actEllipses });
+    this.setState({ inactiveEllipsesList: inactEllipses });
+  };
+
   render() {
     const { className } = this.props;
 
+    window.onscroll = ()=>  this.myFunction();
+    
+
     return (
       <Group13877 className={`group-13877-3 ${className || ""}`}>
-        <Rectangle42 className="rectangle-42-1"></Rectangle42>
-        <Ellipse7 className="ellipse-7-1"></Ellipse7>
-        <Ellipse8 className="ellipse-8-1"></Ellipse8>
-        <Ellipse8 className="ellipse-9-1"></Ellipse8>
-        <Ellipse8 className="ellipse-10-1"></Ellipse8>
-        <Ellipse11 className="ellipse-11-1"></Ellipse11>
-        <Ellipse11 className="ellipse-12-3"></Ellipse11>
-        <Ellipse13 className="ellipse-13-1"></Ellipse13>
+        {this.state.activeEllipsesList}
+        {this.state.inactiveEllipsesList}
       </Group13877>
     );
   }
@@ -39,16 +62,6 @@ const Group13877 = styled.div`
   }
 `;
 
-const Rectangle42 = styled.div`
-  width: 16px;
-  height: 16px;
-  margin-top: 3px;
-  margin-left: 0.81px;
-  background-color: var(--ronchi);
-  border-radius: 2px;
-  transform: rotate(-45deg);
-`;
-
 const Ellipse7 = styled.div`
   ${Border35pxBonJour}
   width: 17px;
@@ -59,9 +72,10 @@ const Ellipse7 = styled.div`
 
 const Ellipse8 = styled.div`
   ${Border35pxBonJour}
+  background-color: var(--ronchi);
   width: 17px;
   height: 17px;
-  margin-top: 9px;
+  margin-top: 12px;
   border-radius: 8.5px;
 `;
 

@@ -1,0 +1,346 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Fira+Sans:600|Barlow:400,700,500,600");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root { 
+  --abbey: #4f4f4f;
+  --abbey-2: #4f4f4fa6;
+  --alabaster: #fbfbfb;
+  --armadillo: #44423e;
+  --armadillo-2: #44423ee6;
+  --black: #000000;
+  --black-2: #00000040;
+  --bon-jour: #e0e0e0;
+  --celeste: #d1d1d1;
+  --cod-gray: #0b0b0b73;
+  --gray: #828282;
+  --gray-2: #808080;
+  --green-white: #ebe7e0;
+  --mine-shaft: #333333;
+  --mist-gray: #c4c4c4;
+  --ronchi: #f2c245;
+  --silver: #bdbdbd;
+  --sonic-silver: #76736f;
+  --spring-wood: #f7f6f3a6;
+  --spring-wood-2: #f7f6f3;
+  --westar: #e1dbd3;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 24px;
+  --font-size-s: 22px;
+  --font-size-xs: 20px;
+  --font-size-xxs: 18px;
+  --font-size-xxxs: 16px;
+  --font-size-xxxxs: 14px;
+ 
+  --font-family-barlow: "Barlow", Helvetica;
+  --font-family-fira_sans: "Fira Sans", Helvetica;
+  --font-family-playfair_display: "Playfair Display", Helvetica;
+}
+
+.mobile-homepage-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 9154px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+.about-us {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 6161px;
+  overflow: hidden;
+  width: 1920px;
+}
+
+
+.our-work-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 9310px;
+  position: relative;
+  width: 1920px;
+}
+
+
+@custom-media --breakpoint-not-small screen and (min-width: 30em);
+@custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
+@custom-media --breakpoint-large screen and (min-width: 60em);
+
+/*
+
+    ANIMATE
+
+    Base:
+        a = animation duration
+        d = animation delay
+
+    Modifiers
+        1 = 1st step (150ms)
+    	2 = 2nd step (300ms)
+    	3 = 3rd step (450ms)
+    	4 = 4th step (600ms)
+    	5 = 5th step (750ms)
+    	6 = 6th step (900ms)
+
+        -1 = literal value 1s
+        -2 = literal value 2s
+        -3 = literal value 3s
+
+    Media Query Extensions:
+        -ns = not-small
+        -m  = medium
+        -l  = large
+
+*/
+
+
+/* Animation Play State */
+
+.pause {
+    animation-play-state: paused;
+}
+
+
+/* Animation Iteration */
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+.double {
+    animation-iteration-count: 2;
+}
+
+.triple {
+    animation-iteration-count: 3;
+}
+
+
+/* Animation Direction */
+
+.reverse {
+    animation-direction: reverse;
+}
+
+.alternate {
+    animation-direction: alternate;
+}
+
+.alternate-reverse {
+    animation-direction: alternate-reverse;
+}
+
+
+/* Animation Duration */
+
+.a1 {
+    animation-duration: 150ms;
+}
+
+.a2 {
+    animation-duration: 300ms;
+}
+
+.a3 {
+    animation-duration: 450ms;
+}
+
+.a4 {
+    animation-duration: 600ms;
+}
+
+.a5 {
+    animation-duration: 750ms;
+}
+
+.a6 {
+    animation-duration: 900ms;
+}
+
+
+.a-1 {
+    animation-duration: 1s;
+}
+
+.a-2 {
+    animation-duration: 2s;
+}
+
+.a-3 {
+    animation-duration: 3s;
+}
+
+
+/* Animation Delay */
+
+.d1 {
+    animation-delay: 150ms;
+}
+
+.d2 {
+    animation-delay: 300ms;
+}
+
+.d3 {
+    animation-delay: 450ms;
+}
+
+.d4 {
+    animation-delay: 600ms;
+}
+
+.d5 {
+    animation-delay: 750ms;
+}
+
+.d6 {
+    animation-delay: 900ms;
+}
+
+.d-1 {
+    animation-delay: 1s;
+}
+
+.d-2 {
+    animation-delay: 2s;
+}
+
+.d-3 {
+    animation-delay: 3s;
+}
+
+/* EASING BEZIER CURVES via https://gist.github.com/bendc/ac03faac0bf2aee25b49e5fd260a727d */
+
+.ease {animation-timing-function: ease;}
+
+.ease-in {animation-timing-function: ease-in;}
+.ease-in-quad {animation-timing-function: cubic-bezier(.55, .085, .68, .53);}
+.ease-in-cubic {animation-timing-function: cubic-bezier(.550, .055, .675, .19);}
+.ease-in-quart {animation-timing-function: cubic-bezier(.895, .03, .685, .22);}
+.ease-in-quint {animation-timing-function: cubic-bezier(.755, .05, .855, .06);}
+.ease-in-expo {animation-timing-function: cubic-bezier(.95, .05, .795, .035);}
+.ease-in-circ {animation-timing-function: cubic-bezier(.6, .04, .98, .335);}
+
+.ease-out {animation-timing-function: ease-out;}
+.ease-out-quad {animation-timing-function: cubic-bezier(.25, .46, .45, .94);}
+.ease-out-cubic {animation-timing-function: cubic-bezier(.215, .61, .355, 1);}
+.ease-out-quart {animation-timing-function: cubic-bezier(.165, .84, .44, 1);}
+.ease-out-quint {animation-timing-function: cubic-bezier(.23, 1, .32, 1);}
+.ease-out-expo {animation-timing-function: cubic-bezier(.19, 1, .22, 1);}
+.ease-out-circ {animation-timing-function: cubic-bezier(.075, .82, .165, 1);}
+
+.ease-in-out {animation-timing-function: ease-in-out;}
+.ease-in-out-quad {animation-timing-function: cubic-bezier(.455, .03, .515, .955);}
+.ease-in-out-cubic {animation-timing-function: cubic-bezier(.645, .045, .355, 1);}
+.ease-in-out-quart {animation-timing-function: cubic-bezier(.77, 0, .175, 1);}
+.ease-in-out-quint {animation-timing-function: cubic-bezier(.86, 0, .07, 1);}
+.ease-in-out-expo {animation-timing-function: cubic-bezier(1, 0, 0, 1);}
+.ease-in-out-circ {animation-timing-function: cubic-bezier(.785, .135, .15, .86);}
+
+
+@media (--breakpoint-not-small) {
+/* COMING SOON */
+}
+
+@media (--breakpoint-medium) {
+/* COMING SOON */
+}
+
+@media (--breakpoint-large) {
+/* COMING SOON */
+}
+
+.homepage-main-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 11452px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.in-news {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4908px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.mobile-in-news-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4050px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+.mobile-about-us-main-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 7347px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+.mobile-about-us-main {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 5195px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+
+
+/*# sourceMappingURL=/cpa.e31bb0bc.css.map */

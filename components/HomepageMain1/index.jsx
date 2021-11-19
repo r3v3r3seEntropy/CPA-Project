@@ -16,6 +16,7 @@ import Group13921 from "../Group13921";
 import Group13919 from "../Group13919";
 import Footer from "../Footer";
 import styled from "styled-components";
+import "tachyons-animate"
 import {
   BarlowMediumAbbey24px,
   FirasansSemiBoldAbbey28px,
@@ -108,15 +109,15 @@ class HomepageMain1 extends React.Component {
       <div className="container-center-horizontal">
         <div className="homepage-main-1 screen">
           <OverlapGroup15>
-            <FlexCol>
+            <FlexCol className="animated fadeInUp ease-out-circ d2 a-1">
               <Name>{name}</Name>
               <Group13876>
                 <Group13875 src="/img/group-13875@2x.svg" />
                 <Text77>{text77}</Text77>
               </Group13876>
             </FlexCol>
-            <Vector18 src="/img/vector-18@2x.svg" />
-            <Image src={image} />
+            <Vector18  src="/img/vector-18@2x.svg" />
+            <Image className="animated fadeInDown d2 a-2" src={image} />
           </OverlapGroup15>
           <Rectangle33></Rectangle33>
           <Place>{place}</Place>
@@ -137,7 +138,7 @@ class HomepageMain1 extends React.Component {
           <Group138773 />
           <OverlapGroup14>
             <Group13941 />
-            <FlexCol1>
+            <FlexCol1 className="animated fadeInLeft d3 a-2">
               <AboutUs1>{aboutUs2}</AboutUs1>
               <Text76>
                 <span className="barlow-normal-abbey-30px">{spanText}</span>

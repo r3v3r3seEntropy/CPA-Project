@@ -4,19 +4,22 @@ import { Border35pxBonJour } from "../../styledMixins";
 
 
 class Group13877 extends React.Component {
+  
   render() {
-    const { className } = this.props;
+    {/*const { className } = this.props;
+    */}
+ const ellipses=[]
+ const rectangles=[]
+ for(let i=0;i<4;i++)
+ rectangles.push( <Rectangle42 className="rectangle-42"></Rectangle42>)
+ for(let i=0;i<4;i++)
+ ellipses.push(<Ellipse7 className="ellipse-7"></Ellipse7>)
 
     return (
       <Group138771 className={`group-13877 ${className || ""}`}>
-        <Rectangle42 className="rectangle-42"></Rectangle42>
-        <Ellipse7 className="ellipse-7"></Ellipse7>
-        <Ellipse8 className="ellipse-8"></Ellipse8>
-        <Ellipse8 className="ellipse-9"></Ellipse8>
-        <Ellipse8 className="ellipse-10"></Ellipse8>
-        <Ellipse8 className="ellipse-11"></Ellipse8>
-        <Ellipse8 className="ellipse-12"></Ellipse8>
-        <Ellipse13 className="ellipse-13"></Ellipse13>
+       
+        {rectangles}
+        {ellipses}
       </Group138771>
     );
   }

@@ -232,7 +232,7 @@ const aboutUsData = {
     aboutUs: "About Us",
     spanText: "The Criminal Justice and Police Accountability Project (CPA Project) was founded in 2019 as a ",
     spanText2: "litigation, research and capacity-building",
-    spanText3: <> intervention committed to ending the disproportionate targeting of marginalise`d communities by the criminal justice system. <br />These communities include those previously officially criminalised under colonial laws, now classified as Denotified Tribal (DNT) Communities or Vimukta communities, as well as other communities that are similarly persecuted and stigmatised.</>,
+    spanText3: <> intervention committed to ending the disproportionate targeting of marginalise`d communities by the criminal justice system.<br />These communities include those previously officially criminalised under colonial laws, now classified as Denotified Tribal (DNT) Communities or Vimukta communities, as well as other communities that are similarly persecuted and stigmatised.</>,
     finalLogo_Png0111: "/img/final-logo-png-01--1--1@2x.png",
     finalLogo_Png01112: "/img/final-logo-png-01--1--1-1@2x.png",
     place: "Home",

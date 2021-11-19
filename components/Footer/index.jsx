@@ -42,7 +42,7 @@ class Footer extends React.Component {
 }
 
 const Footer1 = styled.div`
-  position: fixed;
+  position: absolute;
   width: 1920px;
   top: 8819px;
   left: 0;

@@ -9,6 +9,9 @@ import Group13909 from "../Group13909";
 import Group13921 from "../Group13921";
 import Footer from "../Footer";
 import styled from "styled-components";
+import Carousel from "../Carousel";
+
+
 import {
   PlayfairdisplayBoldWhite36px,
   FirasansSemiBoldAbbey28px,
@@ -23,8 +26,13 @@ import {
 } from "../../styledMixins";
 import "./InNews.css";
 
+
 class InNews extends React.Component {
+   
+  
   render() {
+    
+    
     const {
       inNews,
       text108,
@@ -89,6 +97,21 @@ class InNews extends React.Component {
       group13921Props,
       footerProps,
     } = this.props;
+    console.log(group140347Props)
+    const carousel1Component1={
+      bgImg:group14049,
+      text117: text117,
+      liveLaw2: liveLaw2,
+      image51:image51,
+      image7:image7,
+      image8:image8,
+      image50:image50
+      
+    };
+    const carousel1=[]
+    carousel1.push(carousel1Component1);
+    console.log(carousel1);
+    
 
     return (
       <div className="container-center-horizontal">
@@ -167,38 +190,14 @@ class InNews extends React.Component {
           <OverlapGroup9>
             <Group14054>
               <Discussions>{discussions}</Discussions>
-              <Group14051>
-                <Group14049 style={{ backgroundImage: `url(${group14049})` }}>
-                  <Text117>{text117}</Text117>
-                  <Scrollin1>{liveLaw2}</Scrollin1>
-                  <Group14034 className={group140347Props.className} />
-                </Group14049>
-                <FlexCol>
-                  <Image51 src={image51} />
-                  <OverlapGroup7>
-                    <Rectangle691></Rectangle691>
-                    <Image2 src={image7} />
-                    <Image3 src={image8} />
-                    <Image50 src={image50} />
-                  </OverlapGroup7>
-                </FlexCol>
-              </Group14051>
+              <Carousel data={carousel1}/>
+              
             </Group14054>
+            
             <Vector30 src="/img/vector-30-1@1x.svg" />
-            <FlexRow>
-              <Group1 src="/img/group-39@2x.svg" />
-              <OverlapGroup13>
-                <Ellipse15></Ellipse15>
-                <Number>{number}</Number>
-              </OverlapGroup13>
-              <Number1>{number2}</Number1>
-              <Number2>{number3}</Number2>
-              <Number3>{number4}</Number3>
-              <Text116>{text116}</Text116>
-              <Text116>{number5}</Text116>
-              <Group2 src="/img/group-40@2x.svg" />
-            </FlexRow>
+            
           </OverlapGroup9>
+          
           <Group14055>
             <OverlapGroup8>
               <WorkWithUs>{workWithUs}</WorkWithUs>

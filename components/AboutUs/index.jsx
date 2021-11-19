@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Group138773 from "../Group138773";
 import Group138882 from "../Group138882";
 import Group13921 from "../Group13921";
 import Group13919 from "../Group13919";
@@ -87,7 +88,7 @@ class AboutUs extends React.Component {
       <div className="container-center-horizontal">
         <div className="about-us barlow-medium-mine-shaft-20px screen">
           <OverlapGroup10>
-            <Group13981>
+            <Group13981 className="animated fadeInLeft ease-out-circ d2 a-1">
               <AboutUs1>{aboutUs}</AboutUs1>
               <Text31>
                 <span className="barlow-medium-abbey-24px">{spanText}</span>
@@ -106,6 +107,7 @@ class AboutUs extends React.Component {
           <Link to="/homepage-main-1">
             <Place>{place}</Place>
           </Link>
+          <Group138773/>
           <AboutUs2>{aboutUs2}</AboutUs2>
           <Link to="/our-work-main">
             <OurWork>{ourWork}</OurWork>
@@ -123,7 +125,7 @@ class AboutUs extends React.Component {
             <D10e4360684b11eaA6ac9122541af2041 src={d10E4360684B11EaA6Ac9122541Af2041} />
             <Rectangle48></Rectangle48>
             <Text32>
-              <span className="playfairdisplay-bold-abbey-64px">{spanText4}</span>
+              <span className="playfairdisplay-bold-abbey-30px">{spanText4}</span>
               <span className="barlow-normal-abbey-30px">{spanText5}</span>
             </Text32>
             <Text33>{text33}</Text33>
@@ -134,13 +136,13 @@ class AboutUs extends React.Component {
                 <Vector27 src="/img/vector-27@2x.svg" />
               </OverlapGroup1>
             </Group13977>
-            <Group1>
+            {/*<Group1>
               <OverlapGroup2>
                 <Image1 src={image2} />
                 <Image2 src={image3} />
                 <Image3 src={image4} />
               </OverlapGroup2>
-            </Group1>
+            </Group1>*/}
             <Vector28 src="/img/vector-28@1x.svg" />
             <Ellipse18></Ellipse18>
             <Ellipse19></Ellipse19>
@@ -155,7 +157,7 @@ class AboutUs extends React.Component {
               </Group13979>
               <Text35>
                 <span className="playfairdisplay-bold-white-48px">{spanText6}</span>
-                <span className="barlow-medium-white-24px">{spanText7}</span>
+                <span className="barlow-medium-white-48px">{spanText7}</span>
               </Text35>
             </Group13980>
             <Group13994 src="/img/group-13994@2x.svg" />
@@ -464,6 +466,7 @@ const Text32 = styled.div`
   top: 1506px;
   left: 270px;
   letter-spacing: 0;
+  font-size:30px;
 `;
 
 const Text33 = styled.div`
@@ -654,6 +657,7 @@ const Text35 = styled.div`
   min-height: 260px;
   margin-top: 24px;
   letter-spacing: 0;
+  font-size: 24px;
 `;
 
 const Group13994 = styled.img`

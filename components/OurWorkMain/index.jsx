@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Group138773 from "../Group138773";
 import Group13888 from "../Group13888";
 import Group13893 from "../Group13893";
 import Group13960 from "../Group13960";
@@ -127,6 +128,7 @@ class OurWorkMain extends React.Component {
             <OurWork1>{ourWork2}</OurWork1>
             <Text48>{text48}</Text48>
           </OverlapGroup8>
+          <Group138773/>
           <OverlapGroup10>
             <Text49>{text49}</Text49>
             <Group13999>
@@ -152,6 +154,7 @@ class OurWorkMain extends React.Component {
                 </Text54>
               </Group13892>
             </Group13999>
+            
           </OverlapGroup10>
           <OverlapGroup5>
             <FlexRow>
@@ -270,7 +273,11 @@ class OurWorkMain extends React.Component {
               <Group13919 supportUs={group13919Props.supportUs} group13909Props={group13919Props.group13909Props} />
             </Group13922>
           </OverlapGroup9>
-          <Footer group14013Props={footerProps.group14013Props} group14012Props={footerProps.group14012Props} />
+          <Footer
+            className={footerProps.className}
+            group14013Props={footerProps.group14013Props}
+            group14012Props={footerProps.group14012Props}
+          />
         </div>
       </div>
     );

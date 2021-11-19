@@ -9,7 +9,7 @@ class Group13936 extends React.Component {
 
     return (
       <Group139361 className={`group-13936 ${className || ""}`}>
-        <INNEWS className="in-news">IN NEWS</INNEWS>
+       <INNEWS>IN NEWS</INNEWS>
         <Group13932 className="group-13932">
           <Place className="place">Media</Place>
           <Publications className="publications">Publications</Publications>
@@ -46,7 +46,7 @@ const Group139361 = styled.div`
 
 const INNEWS = styled.div`
   ${BarlowBoldSpringWood20px}
-  min-height: 24px;
+ 
   letter-spacing: 0;
 `;
 
