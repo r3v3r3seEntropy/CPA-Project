@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import styled from "styled-components";
 import Group14034 from "../Group14034";
 import Group13960 from "../Group13960";
 import Group14042 from "../Group14042";
@@ -7,10 +7,7 @@ import Group138773 from "../Group138773";
 import Group13888 from "../Group13888";
 import Group13909 from "../Group13909";
 import Group13921 from "../Group13921";
-import Footer from "../Footer";
-import styled from "styled-components";
-import CarouselDesign1 from '../CarouselDesign1';
-import CarouselDesign2 from '../CarouselDesign2';
+
 
 import {
   PlayfairdisplayBoldWhite36px,
@@ -24,10 +21,41 @@ import {
   BarlowMediumSpringWood28px,
   BarlowMediumGray24px,
 } from "../../styledMixins";
-import "./InNews.css";
 
-class InNews extends React.Component {
+class CarouselDesign1 extends React.Component {
+  constructor(props) {
+   
+   super(props);
+    this.state = {
+      carouselData: props.data,
+      presentInd: 0,
+      presentElement: props.data[0],
+    };
+  }
+  
+  goToNextSlide = () => {
+    let nextInd = this.state.presentInd + 1;
+    let si=this.state.carouselData.length
+    if (nextInd < si) 
+    {
+      this.setState({
+        presentInd: nextInd,
+        presentElement: this.state.carouselData[nextInd],
+      });
+    }
+  };
+  goToPrevSlide = () => {
+    let prevInd = this.state.presentInd - 1;
+    if (prevInd < 0) return;
+    else {
+      this.setState({
+        presentInd: prevInd,
+        presentElement: this.state.carouselData[prevInd],
+      });
+    }
+  };
   render() {
+    console.log(this.state.presentElement);
     const {
       inNews,
       text108,
@@ -92,118 +120,43 @@ class InNews extends React.Component {
       group13921Props,
       footerProps,
     } = this.props;
-    console.log(group14034Props,group140342Props,group140343Props,group140344Props,group140345Props,group140346Props,group13960Props);
-    const carousel1Component1 = {
-      bgImg: group14049,
-      text117: text117,
-      liveLaw2: liveLaw2,
-      image51: image51,
-      image7: image7,
-      image8: image8,
-      image50: image50,
-    };
-    const carousel1 = [];
-    carousel1.push(carousel1Component1);
-    carousel1.push(carousel1Component1);
-    console.log(carousel1);
-    const carousel2Component1={
-      image: image,
-      text109: text109,
-      scrollIn: scrollIn,
-      bgImg1: overlapGroup1,
-      bgImg2: overlapGroup5,
-      newsclick: newsclick,
-      text110: text110,
-      image2: image2,
-      image3: image3,
-      text111: text111,
-      liveLaw: liveLaw,
-      image4: image4,
-      rectangle71: rectangle71,
-      text112: text112,
-      epw: epw,
-      image5: image5,
-      image6: image6,
-      text114: text114,
-      scrollIn2: scrollIn2,
-
-    };
-    
-    const carousel2 = [];
-    carousel2.push(carousel2Component1);
-
-    return (
-      <div className="container-center-horizontal">
-        <div className="in-news screen">
-          <Rectangle33></Rectangle33>
-          <OverlapGroup11>
-            <Group14052>
-              <InNews1>{inNews}</InNews1>
-              <Text108>{text108}</Text108>
-            </Group14052>
-            <Articles>{articles}</Articles>
-            <CarouselDesign2 data={carousel2}/>
-            
-          </OverlapGroup11>
-          <FinalLogoPng0111 src={finalLogo_Png0111} />
-          <Rectangle41></Rectangle41>
-          <Link to="/homepage-main-1">
-            <Place>{place}</Place>
-          </Link>
-          <Link to="/about-us">
-            <AboutUs>{aboutUs}</AboutUs>
-          </Link>
-          <Link to="/our-work-main">
-            <OurWork>{ourWork}</OurWork>
-          </Link>
-          <InNews2>{inNews2}</InNews2>
-          <SupportUs>{supportUs}</SupportUs>
-          <Group src="/img/group-14@2x.svg" />
-          <Vector17 src="/img/vector-17@2x.svg" />
-          <Group138773 className={group138773Props.className} />
-          <OverlapGroup9>
-            <Group14054>
-              <Discussions>{discussions}</Discussions>
-              <CarouselDesign1 data={carousel1}/>
-            </Group14054>
-
-            <Vector30 src="/img/vector-30-1@1x.svg" />
-          </OverlapGroup9>
-
-          <Group14055>
-            <OverlapGroup8>
-              <WorkWithUs>{workWithUs}</WorkWithUs>
-              <Group13888 className={group13888Props.className} />
-            </OverlapGroup8>
-            <Group13922>
-              <Text119>{text119}</Text119>
-              <Group13920>
-                <Group13909 className={group13909Props.className} />
-                <ContactUs>{contactUs}</ContactUs>
-              </Group13920>
-            </Group13922>
-          </Group14055>
-          <OverlapGroup10>
-            <Group13960 className={group139602Props.className} />
-            <Group14057>
-              <UntitledDesign41 src={untitledDesign41} />
-              <Group13921
-                group13919Props={group13921Props.group13919Props}
-                group13919Props2={group13921Props.group13919Props2}
-              />
-            </Group14057>
-          </OverlapGroup10>
-          <Footer
-            className={footerProps.className}
-            group14013Props={footerProps.group14013Props}
-            group14012Props={footerProps.group14012Props}
-          />
-        </div>
-      </div>
-    );
+    console.log(group140347Props)
+      return(
+    <div>
+      <Group14051>
+        <Group14049
+          style={{ backgroundImage: `url(${this.state.presentElement.bgImg})` }}
+        >
+          <Text117>{this.state.presentElement.text117}</Text117>
+          <Scrollin1>{this.state.presentElement.liveLaw2}</Scrollin1>
+          <Group14034 className="group-14024-1" />
+        </Group14049>
+        <FlexCol>
+          <Image51 src={this.state.presentElement.image51} />
+          <OverlapGroup7>
+            <Rectangle691></Rectangle691>
+            <Image2 src={this.state.presentElement.image7} />
+            <Image3 src={this.state.presentElement.image8} />
+            <Image50 src={this.state.presentElement.image50} />
+          </OverlapGroup7>
+        </FlexCol>
+      </Group14051>
+      <FlexRow>
+        <button onClick={this.goToPrevSlide}>
+          <Group1 src="/img/group-39@2x.svg" />
+        </button>
+        <OverlapGroup13>
+          <Ellipse15></Ellipse15>
+          <Number>{this.state.presentInd+1}</Number>
+        </OverlapGroup13>
+        
+        <button onClick={this.goToNextSlide}>
+          <Group2 src="/img/group-40@2x.svg" />
+        </button>
+      </FlexRow>
+    </div>);
   }
 }
-
 const Rectangle33 = styled.div`
   position: fixed;
   width: 1920px;
@@ -656,7 +609,7 @@ const Vector30 = styled.img`
 const FlexRow = styled.div`
   ${BarlowMediumGray24px}
   margin-top: 37px;
-  margin-left: 0.28px;
+  
   display: flex;
   align-items: center;
   min-width: 339px;
@@ -822,4 +775,4 @@ const UntitledDesign41 = styled.img`
   margin-top: 1px;
 `;
 
-export default InNews;
+export default CarouselDesign1;

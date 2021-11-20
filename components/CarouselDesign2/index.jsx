@@ -8,7 +8,6 @@ import Group13888 from "../Group13888";
 import Group13909 from "../Group13909";
 import Group13921 from "../Group13921";
 
-
 import {
   PlayfairdisplayBoldWhite36px,
   FirasansSemiBoldAbbey28px,
@@ -22,21 +21,20 @@ import {
   BarlowMediumGray24px,
 } from "../../styledMixins";
 
-class Carousel extends React.Component {
+class CarouselDesign2 extends React.Component {
   constructor(props) {
-   
-   super(props);
+    super(props);
     this.state = {
       carouselData: props.data,
       presentInd: 0,
       presentElement: props.data[0],
     };
   }
-  
+
   goToNextSlide = () => {
     let nextInd = this.state.presentInd + 1;
-    if (nextInd > this.carouselData.length) return;
-    else {
+    let si = this.state.carouselData.length;
+    if (nextInd < si) {
       this.setState({
         presentInd: nextInd,
         presentElement: this.state.carouselData[nextInd],
@@ -119,45 +117,78 @@ class Carousel extends React.Component {
       group13921Props,
       footerProps,
     } = this.props;
-    console.log(group140347Props)
-      return(
-    <div>
-      <Group14051>
-        <Group14049
-          style={{ backgroundImage: `url(${this.state.presentElement.bgImg})` }}
-        >
-          <Text117>{this.state.presentElement.text117}</Text117>
-          <Scrollin1>{this.state.presentElement.liveLaw2}</Scrollin1>
-          <Group14034 className="group-14024-1" />
-        </Group14049>
-        <FlexCol>
-          <Image51 src={this.state.presentElement.image51} />
-          <OverlapGroup7>
-            <Rectangle691></Rectangle691>
-            <Image2 src={this.state.presentElement.image7} />
-            <Image3 src={this.state.presentElement.image8} />
-            <Image50 src={this.state.presentElement.image50} />
-          </OverlapGroup7>
-        </FlexCol>
-      </Group14051>
-      <FlexRow>
-        <button onClick={this.goToPrevSlide}>
-          <Group1 src="/img/group-39@2x.svg" />
-        </button>
-        <OverlapGroup13>
-          <Ellipse15></Ellipse15>
-          <Number>1</Number>
-        </OverlapGroup13>
-        <Number1>2</Number1>
-        <Number2>3</Number2>
-        <Number3>4</Number3>
-        <Text116>...</Text116>
-        <Text116>15</Text116>
-        <button onClick={this.goToNextSlide}>
-          <Group2 src="/img/group-40@2x.svg" />
-        </button>
-      </FlexRow>
-    </div>);
+    console.log(group140347Props);
+    return (
+      <div>
+        <OverlapGroup12>
+          <OverlapGroup6>
+            <OverlapGroup>
+              <Rectangle69></Rectangle69>
+              <Image src={this.state.presentElement.image} />
+              <Group14034 className="group-14034-2" />
+              <Text109>{this.state.presentElement.text109}</Text109>
+              <Scrollin>{this.state.presentElement.scrollIn}</Scrollin>
+            </OverlapGroup>
+            <OverlapGroup1
+              style={{
+                backgroundImage: `url(${this.state.presentElement.bgImg1})`,
+              }}
+            >
+              <NewsClick>{this.state.presentElement.newsclick}</NewsClick>
+              <Text110>{this.state.presentElement.text110}</Text110>
+              <Group14034 className="group-14034-3" />
+            </OverlapGroup1>
+            <OverlapGroup2>
+              <Rectangle69></Rectangle69>
+              <Image src={this.state.presentElement.image2} />
+              <Image1 src={this.state.presentElement.image3} />
+              <Group14034 className="group-14034-4" />
+              <Text109>{this.state.presentElement.text111}</Text109>
+              <Scrollin>{this.state.presentElement.liveLaw}</Scrollin>
+            </OverlapGroup2>
+            <OverlapGroup3>
+              <Rectangle69></Rectangle69>
+              <Image src={this.state.presentElement.image4} />
+              <Rectangle71 src={this.state.presentElement.rectangle71} />
+              <Group14034 className="group-14034-5" />
+              <Text109>{this.state.presentElement.text112}</Text109>
+              <Scrollin>{this.state.presentElement.epw}</Scrollin>
+            </OverlapGroup3>
+            <OverlapGroup4>
+              <Rectangle69></Rectangle69>
+              <Image src={this.state.presentElement.image5} />
+              <Image1 src={this.state.presentElement.image6} />
+              <Group14034 className="group-14034-6" />
+              <Text113>{this.state.presentElement.text113}</Text113>
+              <ThePrint>{this.state.presentElement.thePrint}</ThePrint>
+            </OverlapGroup4>
+            <OverlapGroup5
+              style={{
+                backgroundImage: `url(${this.state.presentElement.bgImg2})`,
+              }}
+            >
+              <Text114>{this.state.presentElement.text114}</Text114>
+              <Scrollin1>{this.state.presentElement.scrollIn2}</Scrollin1>
+              <Group14034 className="group-14024" />
+            </OverlapGroup5>
+          </OverlapGroup6>
+          <Group13960 className="group-13959-5" />
+        </OverlapGroup12>
+        <FlexRow>
+          <button onClick={this.goToPrevSlide}>
+            <Group1 src="/img/group-39@2x.svg" />
+          </button>
+          <OverlapGroup13>
+            <Ellipse15></Ellipse15>
+            <Number>{this.state.presentInd + 1}</Number>
+          </OverlapGroup13>
+
+          <button onClick={this.goToNextSlide}>
+            <Group2 src="/img/group-40@2x.svg" />
+          </button>
+        </FlexRow>
+      </div>
+    );
   }
 }
 const Rectangle33 = styled.div`
@@ -612,7 +643,7 @@ const Vector30 = styled.img`
 const FlexRow = styled.div`
   ${BarlowMediumGray24px}
   margin-top: 37px;
-  margin-left: 0.28px;
+
   display: flex;
   align-items: center;
   min-width: 339px;
@@ -778,4 +809,4 @@ const UntitledDesign41 = styled.img`
   margin-top: 1px;
 `;
 
-export default Carousel;
+export default CarouselDesign2;

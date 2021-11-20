@@ -41706,7 +41706,7 @@ var Group1 = _styledComponents.default.img(_templateObject12 || (_templateObject
 
 var _default = Group14042;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../styledMixins":"styledMixins.js"}],"components/Carousel/index.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../../styledMixins":"styledMixins.js"}],"components/CarouselDesign1/index.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41764,21 +41764,23 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var Carousel = /*#__PURE__*/function (_React$Component) {
-  _inherits(Carousel, _React$Component);
+var CarouselDesign1 = /*#__PURE__*/function (_React$Component) {
+  _inherits(CarouselDesign1, _React$Component);
 
-  var _super = _createSuper(Carousel);
+  var _super = _createSuper(CarouselDesign1);
 
-  function Carousel(props) {
+  function CarouselDesign1(props) {
     var _this;
 
-    _classCallCheck(this, Carousel);
+    _classCallCheck(this, CarouselDesign1);
 
     _this = _super.call(this, props);
 
     _defineProperty(_assertThisInitialized(_this), "goToNextSlide", function () {
       var nextInd = _this.state.presentInd + 1;
-      if (nextInd > _this.carouselData.length) return;else {
+      var si = _this.state.carouselData.length;
+
+      if (nextInd < si) {
         _this.setState({
           presentInd: nextInd,
           presentElement: _this.state.carouselData[nextInd]
@@ -41804,7 +41806,7 @@ var Carousel = /*#__PURE__*/function (_React$Component) {
     return _this;
   }
 
-  _createClass(Carousel, [{
+  _createClass(CarouselDesign1, [{
     key: "render",
     value: function render() {
       console.log(this.state.presentElement);
@@ -41890,7 +41892,7 @@ var Carousel = /*#__PURE__*/function (_React$Component) {
         onClick: this.goToPrevSlide
       }, /*#__PURE__*/_react.default.createElement(Group1, {
         src: "/img/group-39@2x.svg"
-      })), /*#__PURE__*/_react.default.createElement(OverlapGroup13, null, /*#__PURE__*/_react.default.createElement(Ellipse15, null), /*#__PURE__*/_react.default.createElement(Number, null, "1")), /*#__PURE__*/_react.default.createElement(Number1, null, "2"), /*#__PURE__*/_react.default.createElement(Number2, null, "3"), /*#__PURE__*/_react.default.createElement(Number3, null, "4"), /*#__PURE__*/_react.default.createElement(Text116, null, "..."), /*#__PURE__*/_react.default.createElement(Text116, null, "15"), /*#__PURE__*/_react.default.createElement("button", {
+      })), /*#__PURE__*/_react.default.createElement(OverlapGroup13, null, /*#__PURE__*/_react.default.createElement(Ellipse15, null), /*#__PURE__*/_react.default.createElement(Number, null, this.state.presentInd + 1)), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.goToNextSlide
       }, /*#__PURE__*/_react.default.createElement(Group2, {
         src: "/img/group-40@2x.svg"
@@ -41898,7 +41900,7 @@ var Carousel = /*#__PURE__*/function (_React$Component) {
     }
   }]);
 
-  return Carousel;
+  return CarouselDesign1;
 }(_react.default.Component);
 
 var Rectangle33 = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: fixed;\n  width: 1920px;\n  height: 100px;\n  top: 0;\n  left: 0;\n  z-index: 6;\n  background-color: var(--alabaster);\n  box-shadow: 0px 0px 45px #3333330d;\n"])));
@@ -41999,7 +42001,7 @@ var Image50 = _styledComponents.default.img(_templateObject48 || (_templateObjec
 
 var Vector30 = _styledComponents.default.img(_templateObject49 || (_templateObject49 = _taggedTemplateLiteral(["\n  width: 1442px;\n  height: 6px;\n  margin-top: 77px;\n"])));
 
-var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  margin-left: 0.28px;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
+var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  \n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
 
 var Group1 = _styledComponents.default.img(_templateObject51 || (_templateObject51 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
 
@@ -42039,7 +42041,366 @@ var Group14057 = _styledComponents.default.div(_templateObject68 || (_templateOb
 
 var UntitledDesign41 = _styledComponents.default.img(_templateObject69 || (_templateObject69 = _taggedTemplateLiteral(["\n  width: 454px;\n  height: 376px;\n  margin-top: 1px;\n"])));
 
-var _default = Carousel;
+var _default = CarouselDesign1;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Group14034":"components/Group14034/index.jsx","../Group13960":"components/Group13960/index.jsx","../Group14042":"components/Group14042/index.jsx","../Group138773":"components/Group138773/index.jsx","../Group13888":"components/Group13888/index.jsx","../Group13909":"components/Group13909/index.jsx","../Group13921":"components/Group13921/index.jsx","../../styledMixins":"styledMixins.js"}],"components/CarouselDesign2/index.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _Group = _interopRequireDefault(require("../Group14034"));
+
+var _Group2 = _interopRequireDefault(require("../Group13960"));
+
+var _Group3 = _interopRequireDefault(require("../Group14042"));
+
+var _Group4 = _interopRequireDefault(require("../Group138773"));
+
+var _Group5 = _interopRequireDefault(require("../Group13888"));
+
+var _Group6 = _interopRequireDefault(require("../Group13909"));
+
+var _Group7 = _interopRequireDefault(require("../Group13921"));
+
+var _styledMixins = require("../../styledMixins");
+
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16, _templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27, _templateObject28, _templateObject29, _templateObject30, _templateObject31, _templateObject32, _templateObject33, _templateObject34, _templateObject35, _templateObject36, _templateObject37, _templateObject38, _templateObject39, _templateObject40, _templateObject41, _templateObject42, _templateObject43, _templateObject44, _templateObject45, _templateObject46, _templateObject47, _templateObject48, _templateObject49, _templateObject50, _templateObject51, _templateObject52, _templateObject53, _templateObject54, _templateObject55, _templateObject56, _templateObject57, _templateObject58, _templateObject59, _templateObject60, _templateObject61, _templateObject62, _templateObject63, _templateObject64, _templateObject65, _templateObject66, _templateObject67, _templateObject68, _templateObject69;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var CarouselDesign2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(CarouselDesign2, _React$Component);
+
+  var _super = _createSuper(CarouselDesign2);
+
+  function CarouselDesign2(props) {
+    var _this;
+
+    _classCallCheck(this, CarouselDesign2);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "goToNextSlide", function () {
+      var nextInd = _this.state.presentInd + 1;
+      var si = _this.state.carouselData.length;
+
+      if (nextInd < si) {
+        _this.setState({
+          presentInd: nextInd,
+          presentElement: _this.state.carouselData[nextInd]
+        });
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "goToPrevSlide", function () {
+      var prevInd = _this.state.presentInd - 1;
+      if (prevInd < 0) return;else {
+        _this.setState({
+          presentInd: prevInd,
+          presentElement: _this.state.carouselData[prevInd]
+        });
+      }
+    });
+
+    _this.state = {
+      carouselData: props.data,
+      presentInd: 0,
+      presentElement: props.data[0]
+    };
+    return _this;
+  }
+
+  _createClass(CarouselDesign2, [{
+    key: "render",
+    value: function render() {
+      console.log(this.state.presentElement);
+      var _this$props = this.props,
+          inNews = _this$props.inNews,
+          text108 = _this$props.text108,
+          articles = _this$props.articles,
+          image = _this$props.image,
+          text109 = _this$props.text109,
+          scrollIn = _this$props.scrollIn,
+          overlapGroup1 = _this$props.overlapGroup1,
+          newsclick = _this$props.newsclick,
+          text110 = _this$props.text110,
+          image2 = _this$props.image2,
+          image3 = _this$props.image3,
+          text111 = _this$props.text111,
+          liveLaw = _this$props.liveLaw,
+          image4 = _this$props.image4,
+          rectangle71 = _this$props.rectangle71,
+          text112 = _this$props.text112,
+          epw = _this$props.epw,
+          image5 = _this$props.image5,
+          image6 = _this$props.image6,
+          text113 = _this$props.text113,
+          thePrint = _this$props.thePrint,
+          overlapGroup5 = _this$props.overlapGroup5,
+          text114 = _this$props.text114,
+          scrollIn2 = _this$props.scrollIn2,
+          finalLogo_Png0111 = _this$props.finalLogo_Png0111,
+          place = _this$props.place,
+          aboutUs = _this$props.aboutUs,
+          ourWork = _this$props.ourWork,
+          inNews2 = _this$props.inNews2,
+          supportUs = _this$props.supportUs,
+          discussions = _this$props.discussions,
+          group14049 = _this$props.group14049,
+          text117 = _this$props.text117,
+          liveLaw2 = _this$props.liveLaw2,
+          image51 = _this$props.image51,
+          image7 = _this$props.image7,
+          image8 = _this$props.image8,
+          image50 = _this$props.image50,
+          number = _this$props.number,
+          number2 = _this$props.number2,
+          number3 = _this$props.number3,
+          number4 = _this$props.number4,
+          text116 = _this$props.text116,
+          number5 = _this$props.number5,
+          workWithUs = _this$props.workWithUs,
+          text119 = _this$props.text119,
+          contactUs = _this$props.contactUs,
+          untitledDesign41 = _this$props.untitledDesign41,
+          group14034Props = _this$props.group14034Props,
+          group140342Props = _this$props.group140342Props,
+          group140343Props = _this$props.group140343Props,
+          group140344Props = _this$props.group140344Props,
+          group140345Props = _this$props.group140345Props,
+          group140346Props = _this$props.group140346Props,
+          group13960Props = _this$props.group13960Props,
+          group138773Props = _this$props.group138773Props,
+          group140347Props = _this$props.group140347Props,
+          group13888Props = _this$props.group13888Props,
+          group13909Props = _this$props.group13909Props,
+          group139602Props = _this$props.group139602Props,
+          group13921Props = _this$props.group13921Props,
+          footerProps = _this$props.footerProps;
+      console.log(group140347Props);
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(OverlapGroup12, null, /*#__PURE__*/_react.default.createElement(OverlapGroup6, null, /*#__PURE__*/_react.default.createElement(OverlapGroup, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
+        src: this.state.presentElement.image
+      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
+        className: "group-14034-2"
+      }), /*#__PURE__*/_react.default.createElement(Text109, null, this.state.presentElement.text109), /*#__PURE__*/_react.default.createElement(Scrollin, null, this.state.presentElement.scrollIn)), /*#__PURE__*/_react.default.createElement(OverlapGroup1, {
+        style: {
+          backgroundImage: "url(".concat(this.state.presentElement.bgImg1, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement(NewsClick, null, this.state.presentElement.newsclick), /*#__PURE__*/_react.default.createElement(Text110, null, this.state.presentElement.text110), /*#__PURE__*/_react.default.createElement(_Group.default, {
+        className: "group-14034-3"
+      })), /*#__PURE__*/_react.default.createElement(OverlapGroup2, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
+        src: this.state.presentElement.image2
+      }), /*#__PURE__*/_react.default.createElement(Image1, {
+        src: this.state.presentElement.image3
+      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
+        className: "group-14034-4"
+      }), /*#__PURE__*/_react.default.createElement(Text109, null, this.state.presentElement.text111), /*#__PURE__*/_react.default.createElement(Scrollin, null, this.state.presentElement.liveLaw)), /*#__PURE__*/_react.default.createElement(OverlapGroup3, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
+        src: this.state.presentElement.image4
+      }), /*#__PURE__*/_react.default.createElement(Rectangle71, {
+        src: this.state.presentElement.rectangle71
+      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
+        className: "group-14034-5"
+      }), /*#__PURE__*/_react.default.createElement(Text109, null, this.state.presentElement.text112), /*#__PURE__*/_react.default.createElement(Scrollin, null, this.state.presentElement.epw)), /*#__PURE__*/_react.default.createElement(OverlapGroup4, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
+        src: this.state.presentElement.image5
+      }), /*#__PURE__*/_react.default.createElement(Image1, {
+        src: this.state.presentElement.image6
+      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
+        className: "group-14034-6"
+      }), /*#__PURE__*/_react.default.createElement(Text113, null, this.state.presentElement.text113), /*#__PURE__*/_react.default.createElement(ThePrint, null, this.state.presentElement.thePrint)), /*#__PURE__*/_react.default.createElement(OverlapGroup5, {
+        style: {
+          backgroundImage: "url(".concat(this.state.presentElement.bgImg2, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement(Text114, null, this.state.presentElement.text114), /*#__PURE__*/_react.default.createElement(Scrollin1, null, this.state.presentElement.scrollIn2), /*#__PURE__*/_react.default.createElement(_Group.default, {
+        className: "group-14024"
+      }))), /*#__PURE__*/_react.default.createElement(_Group2.default, {
+        className: "group-13959-5"
+      })), /*#__PURE__*/_react.default.createElement(FlexRow, null, /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.goToPrevSlide
+      }, /*#__PURE__*/_react.default.createElement(Group1, {
+        src: "/img/group-39@2x.svg"
+      })), /*#__PURE__*/_react.default.createElement(OverlapGroup13, null, /*#__PURE__*/_react.default.createElement(Ellipse15, null), /*#__PURE__*/_react.default.createElement(Number, null, this.state.presentInd + 1)), /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.goToNextSlide
+      }, /*#__PURE__*/_react.default.createElement(Group2, {
+        src: "/img/group-40@2x.svg"
+      }))));
+    }
+  }]);
+
+  return CarouselDesign2;
+}(_react.default.Component);
+
+var Rectangle33 = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: fixed;\n  width: 1920px;\n  height: 100px;\n  top: 0;\n  left: 0;\n  z-index: 6;\n  background-color: var(--alabaster);\n  box-shadow: 0px 0px 45px #3333330d;\n"])));
+
+var OverlapGroup11 = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  width: 1920px;\n  z-index: 1;\n  position: relative;\n  margin-top: 2px;\n  display: flex;\n  flex-direction: column;\n  padding: 119px 0;\n  align-items: center;\n  min-height: 1835px;\n  background-color: var(--spring-wood-2);\n"])));
+
+var Group14052 = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  width: 975px;\n  margin-top: 122px;\n  margin-right: 421px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-height: 149px;\n"])));
+
+var InNews1 = _styledComponents.default.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  min-height: 74px;\n  font-family: var(--font-family-playfair_display);\n  font-weight: 700;\n  color: var(--mine-shaft);\n  font-size: 72px;\n  letter-spacing: 0;\n  line-height: 74.2px;\n  white-space: nowrap;\n"])));
+
+var Text108 = _styledComponents.default.div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  width: 971px;\n  min-height: 43px;\n  margin-top: 32px;\n  font-family: var(--font-family-barlow);\n  font-weight: 500;\n  color: var(--abbey);\n  font-size: 36px;\n  letter-spacing: 0;\n"])));
+
+var Articles = _styledComponents.default.div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  ", "\n  min-height: 66px;\n  align-self: flex-start;\n  margin-top: 80px;\n  margin-left: 266px;\n  letter-spacing: 0;\n  line-height: 65.9px;\n  white-space: nowrap;\n"])), _styledMixins.PlayfairdisplayBoldMineShaft64px);
+
+var OverlapGroup12 = _styledComponents.default.div(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n  width: 1486px;\n  height: 1062px;\n  position: relative;\n  margin-top: 15px;\n"])));
+
+var OverlapGroup6 = _styledComponents.default.div(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 1486px;\n  height: 1062px;\n  top: 0;\n  left: 0;\n"])));
+
+var OverlapGroup = _styledComponents.default.div(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  height: 368px;\n  top: 694px;\n  left: 0;\n"])));
+
+var Rectangle69 = _styledComponents.default.div(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 404px;\n  height: 278px;\n  top: 41px;\n  left: 45px;\n  background-color: var(--spring-wood-2);\n  border-radius: 5px;\n"])));
+
+var Image = _styledComponents.default.img(_templateObject11 || (_templateObject11 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  height: 368px;\n  top: 0;\n  left: 0;\n"])));
+
+var Text109 = _styledComponents.default.div(_templateObject12 || (_templateObject12 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  width: 305px;\n  top: 129px;\n  left: 85px;\n  letter-spacing: 0;\n"])), _styledMixins.PlayfairdisplayBoldWhite26px);
+
+var Scrollin = _styledComponents.default.div(_templateObject13 || (_templateObject13 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  width: 257px;\n  top: 92px;\n  left: 85px;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumSpringWood24px);
+
+var OverlapGroup1 = _styledComponents.default.div(_templateObject14 || (_templateObject14 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  top: 694px;\n  left: 496px;\n  display: flex;\n  flex-direction: column;\n  padding: 69px 85px;\n  align-items: flex-start;\n  min-height: 368px;\n  background-size: 100% 100%;\n"])));
+
+var NewsClick = _styledComponents.default.div(_templateObject15 || (_templateObject15 = _taggedTemplateLiteral(["\n  ", "\n  width: 257px;\n  min-height: 29px;\n  margin-top: 23px;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumSpringWood24px);
+
+var Text110 = _styledComponents.default.div(_templateObject16 || (_templateObject16 = _taggedTemplateLiteral(["\n  ", "\n  width: 305px;\n  min-height: 140px;\n  margin-top: 8px;\n  letter-spacing: 0;\n"])), _styledMixins.PlayfairdisplayBoldWhite26px);
+
+var OverlapGroup2 = _styledComponents.default.div(_templateObject17 || (_templateObject17 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  height: 368px;\n  top: 694px;\n  left: 992px;\n"])));
+
+var Image1 = _styledComponents.default.img(_templateObject18 || (_templateObject18 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 404px;\n  height: 278px;\n  top: 41px;\n  left: 45px;\n"])));
+
+var OverlapGroup3 = _styledComponents.default.div(_templateObject19 || (_templateObject19 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  height: 368px;\n  top: 0;\n  left: 992px;\n"])));
+
+var Rectangle71 = _styledComponents.default.img(_templateObject20 || (_templateObject20 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  height: 368px;\n  top: 0;\n  left: 0;\n  object-fit: cover;\n"])));
+
+var OverlapGroup4 = _styledComponents.default.div(_templateObject21 || (_templateObject21 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 494px;\n  height: 368px;\n  top: 334px;\n  left: 992px;\n"])));
+
+var Text113 = _styledComponents.default.div(_templateObject22 || (_templateObject22 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  width: 325px;\n  top: 152px;\n  left: 85px;\n  letter-spacing: 0;\n"])), _styledMixins.PlayfairdisplayBoldWhite26px);
+
+var ThePrint = _styledComponents.default.div(_templateObject23 || (_templateObject23 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  width: 257px;\n  top: 107px;\n  left: 85px;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumSpringWood24px);
+
+var OverlapGroup5 = _styledComponents.default.div(_templateObject24 || (_templateObject24 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 1001px;\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  padding: 85px;\n  align-items: flex-start;\n  min-height: 702px;\n  background-size: 100% 100%;\n"])));
+
+var Text114 = _styledComponents.default.div(_templateObject25 || (_templateObject25 = _taggedTemplateLiteral(["\n  ", "\n  width: 648px;\n  min-height: 144px;\n  margin-top: 300px;\n  letter-spacing: 0;\n"])), _styledMixins.PlayfairdisplayBoldWhite36px);
+
+var Scrollin1 = _styledComponents.default.div(_templateObject26 || (_templateObject26 = _taggedTemplateLiteral(["\n  ", "\n  min-height: 34px;\n  margin-top: 16px;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumSpringWood28px);
+
+var FinalLogoPng0111 = _styledComponents.default.img(_templateObject27 || (_templateObject27 = _taggedTemplateLiteral(["\n  position: fixed;\n  width: 187px;\n  height: 50px;\n  top: 25px;\n  left: 120px;\n  z-index: 14;\n  object-fit: cover;\n"])));
+
+var Rectangle41 = _styledComponents.default.div(_templateObject28 || (_templateObject28 = _taggedTemplateLiteral(["\n  position: fixed;\n  width: 44px;\n  height: 44px;\n  top: 28px;\n  left: 1720px;\n  z-index: 12;\n  background-color: var(--green-white);\n  border-radius: 150px;\n"])));
+
+var Place = _styledComponents.default.div(_templateObject29 || (_templateObject29 = _taggedTemplateLiteral(["\n  ", "\n  position: fixed;\n  top: 38px;\n  left: 1126px;\n  z-index: 7;\n  letter-spacing: 0;\n  cursor: pointer;\n"])), _styledMixins.BarlowMediumMineShaft20px);
+
+var AboutUs = _styledComponents.default.div(_templateObject30 || (_templateObject30 = _taggedTemplateLiteral(["\n  ", "\n  position: fixed;\n  top: 38px;\n  left: 1226px;\n  z-index: 8;\n  letter-spacing: 0;\n  cursor: pointer;\n"])), _styledMixins.BarlowMediumMineShaft20px);
+
+var OurWork = _styledComponents.default.div(_templateObject31 || (_templateObject31 = _taggedTemplateLiteral(["\n  ", "\n  position: fixed;\n  top: 38px;\n  left: 1354px;\n  z-index: 9;\n  letter-spacing: 0;\n  cursor: pointer;\n"])), _styledMixins.BarlowMediumMineShaft20px);
+
+var InNews2 = _styledComponents.default.div(_templateObject32 || (_templateObject32 = _taggedTemplateLiteral(["\n  ", "\n  position: fixed;\n  top: 38px;\n  left: 1482px;\n  z-index: 10;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumMineShaft20px);
+
+var SupportUs = _styledComponents.default.div(_templateObject33 || (_templateObject33 = _taggedTemplateLiteral(["\n  ", "\n  position: fixed;\n  top: 38px;\n  left: 1598px;\n  z-index: 11;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumMineShaft20px);
+
+var Group = _styledComponents.default.img(_templateObject34 || (_templateObject34 = _taggedTemplateLiteral(["\n  position: fixed;\n  width: 24px;\n  height: 23px;\n  top: 38px;\n  left: 1730px;\n  z-index: 13;\n"])));
+
+var Vector17 = _styledComponents.default.img(_templateObject35 || (_templateObject35 = _taggedTemplateLiteral(["\n  position: fixed;\n  width: 70px;\n  height: 4px;\n  top: 62px;\n  left: 1480px;\n  z-index: 15;\n"])));
+
+var OverlapGroup9 = _styledComponents.default.div(_templateObject36 || (_templateObject36 = _taggedTemplateLiteral(["\n  width: 1920px;\n  z-index: 2;\n  display: flex;\n  flex-direction: column;\n  padding: 171px 0;\n  align-items: center;\n  min-height: 1229px;\n  background-color: var(--green-white);\n"])));
+
+var Group14054 = _styledComponents.default.div(_templateObject37 || (_templateObject37 = _taggedTemplateLiteral(["\n  width: 1398px;\n  margin-top: 1px;\n  margin-left: 2px;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-height: 734px;\n"])));
+
+var Discussions = _styledComponents.default.div(_templateObject38 || (_templateObject38 = _taggedTemplateLiteral(["\n  ", "\n  min-height: 66px;\n  letter-spacing: 0;\n  line-height: 65.9px;\n  white-space: nowrap;\n"])), _styledMixins.PlayfairdisplayBoldMineShaft64px);
+
+var Group14051 = _styledComponents.default.div(_templateObject39 || (_templateObject39 = _taggedTemplateLiteral(["\n  height: 612px;\n  margin-top: 56px;\n  display: flex;\n  align-items: flex-end;\n  min-width: 1396px;\n"])));
+
+var Group14049 = _styledComponents.default.div(_templateObject40 || (_templateObject40 = _taggedTemplateLiteral(["\n  width: 911px;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  padding: 36px 40px;\n  align-items: flex-start;\n  min-height: 612px;\n  background-size: 100% 100%;\n"])));
+
+var Text117 = _styledComponents.default.div(_templateObject41 || (_templateObject41 = _taggedTemplateLiteral(["\n  ", "\n  width: 648px;\n  min-height: 144px;\n  margin-top: 308px;\n  letter-spacing: 0;\n"])), _styledMixins.PlayfairdisplayBoldWhite36px);
+
+var FlexCol = _styledComponents.default.div(_templateObject42 || (_templateObject42 = _taggedTemplateLiteral(["\n  width: 484px;\n  margin-left: 36px;\n  margin-bottom: -49px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  min-height: 661px;\n"])));
+
+var Image51 = _styledComponents.default.img(_templateObject43 || (_templateObject43 = _taggedTemplateLiteral(["\n  width: 404px;\n  height: 278px;\n  margin-left: 10.71px;\n"])));
+
+var OverlapGroup7 = _styledComponents.default.div(_templateObject44 || (_templateObject44 = _taggedTemplateLiteral(["\n  width: 484px;\n  height: 368px;\n  position: relative;\n  margin-top: 15px;\n"])));
+
+var Rectangle691 = _styledComponents.default.div(_templateObject45 || (_templateObject45 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 393px;\n  height: 278px;\n  top: 41px;\n  left: 45px;\n  background-color: var(--spring-wood-2);\n  border-radius: 5px;\n"])));
+
+var Image2 = _styledComponents.default.img(_templateObject46 || (_templateObject46 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 484px;\n  height: 368px;\n  top: 0;\n  left: 0;\n"])));
+
+var Image3 = _styledComponents.default.img(_templateObject47 || (_templateObject47 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 394px;\n  height: 278px;\n  top: 41px;\n  left: 45px;\n"])));
+
+var Image50 = _styledComponents.default.img(_templateObject48 || (_templateObject48 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 404px;\n  height: 278px;\n  top: 41px;\n  left: 45px;\n  object-fit: cover;\n"])));
+
+var Vector30 = _styledComponents.default.img(_templateObject49 || (_templateObject49 = _taggedTemplateLiteral(["\n  width: 1442px;\n  height: 6px;\n  margin-top: 77px;\n"])));
+
+var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
+
+var Group1 = _styledComponents.default.img(_templateObject51 || (_templateObject51 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
+
+var OverlapGroup13 = _styledComponents.default.div(_templateObject52 || (_templateObject52 = _taggedTemplateLiteral(["\n  width: 32px;\n  height: 32px;\n  position: relative;\n  margin-left: 28px;\n  border-radius: 16px;\n"])));
+
+var Ellipse15 = _styledComponents.default.div(_templateObject53 || (_templateObject53 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 32px;\n  height: 32px;\n  top: 0;\n  left: 0;\n  background-color: var(--westar);\n  border-radius: 16px;\n"])));
+
+var Number = _styledComponents.default.div(_templateObject54 || (_templateObject54 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  top: 1px;\n  left: 11px;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowSemiBoldAbbey24px);
+
+var Number1 = _styledComponents.default.div(_templateObject55 || (_templateObject55 = _taggedTemplateLiteral(["\n  min-height: 29px;\n  margin-left: 12px;\n  margin-bottom: 1px;\n  min-width: 14px;\n  letter-spacing: 0;\n"])));
+
+var Number2 = _styledComponents.default.div(_templateObject56 || (_templateObject56 = _taggedTemplateLiteral(["\n  min-height: 29px;\n  margin-left: 24px;\n  margin-bottom: 1px;\n  min-width: 13px;\n  letter-spacing: 0;\n"])));
+
+var Number3 = _styledComponents.default.div(_templateObject57 || (_templateObject57 = _taggedTemplateLiteral(["\n  min-height: 29px;\n  margin-left: 24px;\n  margin-bottom: 1px;\n  min-width: 14px;\n  letter-spacing: 0;\n"])));
+
+var Text116 = _styledComponents.default.div(_templateObject58 || (_templateObject58 = _taggedTemplateLiteral(["\n  min-height: 29px;\n  margin-left: 24px;\n  margin-bottom: 1px;\n  min-width: 27px;\n  letter-spacing: 0;\n"])));
+
+var Group2 = _styledComponents.default.img(_templateObject59 || (_templateObject59 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-left: 40px;\n  margin-bottom: 0.79px;\n"])));
+
+var Group14055 = _styledComponents.default.div(_templateObject60 || (_templateObject60 = _taggedTemplateLiteral(["\n  width: 1920px;\n  z-index: 4;\n  display: flex;\n  flex-direction: column;\n  padding: 145px 262px;\n  align-items: flex-start;\n  min-height: 675px;\n  background-color: var(--spring-wood-2);\n"])));
+
+var OverlapGroup8 = _styledComponents.default.div(_templateObject61 || (_templateObject61 = _taggedTemplateLiteral(["\n  width: 388px;\n  height: 90px;\n  position: relative;\n  margin-top: 1px;\n"])));
+
+var WorkWithUs = _styledComponents.default.div(_templateObject62 || (_templateObject62 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  top: 0;\n  left: 0;\n  letter-spacing: 0;\n"])), _styledMixins.PlayfairdisplayBoldMineShaft64px);
+
+var Group13922 = _styledComponents.default.div(_templateObject63 || (_templateObject63 = _taggedTemplateLiteral(["\n  width: 690px;\n  margin-top: 56px;\n  margin-left: 0;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  min-height: 238px;\n"])));
+
+var Text119 = _styledComponents.default.div(_templateObject64 || (_templateObject64 = _taggedTemplateLiteral(["\n  ", "\n  width: 688px;\n  min-height: 180px;\n  margin-left: 0;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowMediumAbbey30px);
+
+var Group13920 = _styledComponents.default.div(_templateObject65 || (_templateObject65 = _taggedTemplateLiteral(["\n  height: 34px;\n  position: relative;\n  margin-top: 24px;\n  display: flex;\n  align-items: flex-start;\n  min-width: 206px;\n"])));
+
+var ContactUs = _styledComponents.default.div(_templateObject66 || (_templateObject66 = _taggedTemplateLiteral(["\n  ", "\n  width: 164px;\n  min-height: 34px;\n  margin-left: 16px;\n  margin-top: 0;\n  letter-spacing: 0;\n  text-decoration: underline;\n"])), _styledMixins.FirasansSemiBoldAbbey28px);
+
+var OverlapGroup10 = _styledComponents.default.div(_templateObject67 || (_templateObject67 = _taggedTemplateLiteral(["\n  width: 1920px;\n  height: 675px;\n  z-index: 3;\n  position: relative;\n"])));
+
+var Group14057 = _styledComponents.default.div(_templateObject68 || (_templateObject68 = _taggedTemplateLiteral(["\n  position: absolute;\n  height: 675px;\n  top: 0;\n  left: 0;\n  display: flex;\n  padding: 145px 240px;\n  justify-content: flex-end;\n  align-items: center;\n  min-width: 1920px;\n  background-color: var(--green-white);\n"])));
+
+var UntitledDesign41 = _styledComponents.default.img(_templateObject69 || (_templateObject69 = _taggedTemplateLiteral(["\n  width: 454px;\n  height: 376px;\n  margin-top: 1px;\n"])));
+
+var _default = CarouselDesign2;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Group14034":"components/Group14034/index.jsx","../Group13960":"components/Group13960/index.jsx","../Group14042":"components/Group14042/index.jsx","../Group138773":"components/Group138773/index.jsx","../Group13888":"components/Group13888/index.jsx","../Group13909":"components/Group13909/index.jsx","../Group13921":"components/Group13921/index.jsx","../../styledMixins":"styledMixins.js"}],"components/InNews/InNews.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -42076,7 +42437,9 @@ var _Footer = _interopRequireDefault(require("../Footer"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-var _Carousel = _interopRequireDefault(require("../Carousel"));
+var _CarouselDesign = _interopRequireDefault(require("../CarouselDesign1"));
+
+var _CarouselDesign2 = _interopRequireDefault(require("../CarouselDesign2"));
 
 var _styledMixins = require("../../styledMixins");
 
@@ -42187,7 +42550,7 @@ var InNews = /*#__PURE__*/function (_React$Component) {
           group139602Props = _this$props.group139602Props,
           group13921Props = _this$props.group13921Props,
           footerProps = _this$props.footerProps;
-      console.log(group140347Props);
+      console.log(group14034Props, group140342Props, group140343Props, group140344Props, group140345Props, group140346Props, group13960Props);
       var carousel1Component1 = {
         bgImg: group14049,
         text117: text117,
@@ -42199,48 +42562,38 @@ var InNews = /*#__PURE__*/function (_React$Component) {
       };
       var carousel1 = [];
       carousel1.push(carousel1Component1);
+      carousel1.push(carousel1Component1);
       console.log(carousel1);
+      var carousel2Component1 = {
+        image: image,
+        text109: text109,
+        scrollIn: scrollIn,
+        bgImg1: overlapGroup1,
+        bgImg2: overlapGroup5,
+        newsclick: newsclick,
+        text110: text110,
+        image2: image2,
+        image3: image3,
+        text111: text111,
+        liveLaw: liveLaw,
+        image4: image4,
+        rectangle71: rectangle71,
+        text112: text112,
+        epw: epw,
+        image5: image5,
+        image6: image6,
+        text114: text114,
+        scrollIn2: scrollIn2
+      };
+      var carousel2 = [];
+      carousel2.push(carousel2Component1);
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "container-center-horizontal"
       }, /*#__PURE__*/_react.default.createElement("div", {
         className: "in-news screen"
-      }, /*#__PURE__*/_react.default.createElement(Rectangle33, null), /*#__PURE__*/_react.default.createElement(OverlapGroup11, null, /*#__PURE__*/_react.default.createElement(Group14052, null, /*#__PURE__*/_react.default.createElement(InNews1, null, inNews), /*#__PURE__*/_react.default.createElement(Text108, null, text108)), /*#__PURE__*/_react.default.createElement(Articles, null, articles), /*#__PURE__*/_react.default.createElement(OverlapGroup12, null, /*#__PURE__*/_react.default.createElement(OverlapGroup6, null, /*#__PURE__*/_react.default.createElement(OverlapGroup, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
-        src: image
-      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
-        className: group14034Props.className
-      }), /*#__PURE__*/_react.default.createElement(Text109, null, text109), /*#__PURE__*/_react.default.createElement(Scrollin, null, scrollIn)), /*#__PURE__*/_react.default.createElement(OverlapGroup1, {
-        style: {
-          backgroundImage: "url(".concat(overlapGroup1, ")")
-        }
-      }, /*#__PURE__*/_react.default.createElement(NewsClick, null, newsclick), /*#__PURE__*/_react.default.createElement(Text110, null, text110), /*#__PURE__*/_react.default.createElement(_Group.default, {
-        className: group140342Props.className
-      })), /*#__PURE__*/_react.default.createElement(OverlapGroup2, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
-        src: image2
-      }), /*#__PURE__*/_react.default.createElement(Image1, {
-        src: image3
-      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
-        className: group140343Props.className
-      }), /*#__PURE__*/_react.default.createElement(Text109, null, text111), /*#__PURE__*/_react.default.createElement(Scrollin, null, liveLaw)), /*#__PURE__*/_react.default.createElement(OverlapGroup3, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
-        src: image4
-      }), /*#__PURE__*/_react.default.createElement(Rectangle71, {
-        src: rectangle71
-      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
-        className: group140344Props.className
-      }), /*#__PURE__*/_react.default.createElement(Text109, null, text112), /*#__PURE__*/_react.default.createElement(Scrollin, null, epw)), /*#__PURE__*/_react.default.createElement(OverlapGroup4, null, /*#__PURE__*/_react.default.createElement(Rectangle69, null), /*#__PURE__*/_react.default.createElement(Image, {
-        src: image5
-      }), /*#__PURE__*/_react.default.createElement(Image1, {
-        src: image6
-      }), /*#__PURE__*/_react.default.createElement(_Group.default, {
-        className: group140345Props.className
-      }), /*#__PURE__*/_react.default.createElement(Text113, null, text113), /*#__PURE__*/_react.default.createElement(ThePrint, null, thePrint)), /*#__PURE__*/_react.default.createElement(OverlapGroup5, {
-        style: {
-          backgroundImage: "url(".concat(overlapGroup5, ")")
-        }
-      }, /*#__PURE__*/_react.default.createElement(Text114, null, text114), /*#__PURE__*/_react.default.createElement(Scrollin1, null, scrollIn2), /*#__PURE__*/_react.default.createElement(_Group.default, {
-        className: group140346Props.className
-      }))), /*#__PURE__*/_react.default.createElement(_Group2.default, {
-        className: group13960Props.className
-      })), /*#__PURE__*/_react.default.createElement(_Group3.default, null)), /*#__PURE__*/_react.default.createElement(FinalLogoPng0111, {
+      }, /*#__PURE__*/_react.default.createElement(Rectangle33, null), /*#__PURE__*/_react.default.createElement(OverlapGroup11, null, /*#__PURE__*/_react.default.createElement(Group14052, null, /*#__PURE__*/_react.default.createElement(InNews1, null, inNews), /*#__PURE__*/_react.default.createElement(Text108, null, text108)), /*#__PURE__*/_react.default.createElement(Articles, null, articles), /*#__PURE__*/_react.default.createElement(_CarouselDesign2.default, {
+        data: carousel2
+      })), /*#__PURE__*/_react.default.createElement(FinalLogoPng0111, {
         src: finalLogo_Png0111
       }), /*#__PURE__*/_react.default.createElement(Rectangle41, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
         to: "/homepage-main-1"
@@ -42254,7 +42607,7 @@ var InNews = /*#__PURE__*/function (_React$Component) {
         src: "/img/vector-17@2x.svg"
       }), /*#__PURE__*/_react.default.createElement(_Group4.default, {
         className: group138773Props.className
-      }), /*#__PURE__*/_react.default.createElement(OverlapGroup9, null, /*#__PURE__*/_react.default.createElement(Group14054, null, /*#__PURE__*/_react.default.createElement(Discussions, null, discussions), /*#__PURE__*/_react.default.createElement(_Carousel.default, {
+      }), /*#__PURE__*/_react.default.createElement(OverlapGroup9, null, /*#__PURE__*/_react.default.createElement(Group14054, null, /*#__PURE__*/_react.default.createElement(Discussions, null, discussions), /*#__PURE__*/_react.default.createElement(_CarouselDesign.default, {
         data: carousel1
       })), /*#__PURE__*/_react.default.createElement(Vector30, {
         src: "/img/vector-30-1@1x.svg"
@@ -42420,7 +42773,7 @@ var UntitledDesign41 = _styledComponents.default.img(_templateObject69 || (_temp
 
 var _default = InNews;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Group14034":"components/Group14034/index.jsx","../Group13960":"components/Group13960/index.jsx","../Group14042":"components/Group14042/index.jsx","../Group138773":"components/Group138773/index.jsx","../Group13888":"components/Group13888/index.jsx","../Group13909":"components/Group13909/index.jsx","../Group13921":"components/Group13921/index.jsx","../Footer":"components/Footer/index.jsx","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../Carousel":"components/Carousel/index.jsx","../../styledMixins":"styledMixins.js","./InNews.css":"components/InNews/InNews.css"}],"components/Group14102/index.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Group14034":"components/Group14034/index.jsx","../Group13960":"components/Group13960/index.jsx","../Group14042":"components/Group14042/index.jsx","../Group138773":"components/Group138773/index.jsx","../Group13888":"components/Group13888/index.jsx","../Group13909":"components/Group13909/index.jsx","../Group13921":"components/Group13921/index.jsx","../Footer":"components/Footer/index.jsx","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js","../CarouselDesign1":"components/CarouselDesign1/index.jsx","../CarouselDesign2":"components/CarouselDesign2/index.jsx","../../styledMixins":"styledMixins.js","./InNews.css":"components/InNews/InNews.css"}],"components/Group14102/index.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
