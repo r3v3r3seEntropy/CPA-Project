@@ -3,9 +3,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 11452px;
   overflow: hidden;
   position: relative;
-  width: 1920px;
 }
 
