@@ -44391,7 +44391,6 @@ var mobileHomepageMainData = {
   rectangle53: "/img/rectangle-53@2x.png",
   image10: "/img/image@2x.png",
   image11: "/img/image-7@2x.png",
-  recentPosts: "Recent Posts",
   supportUs: "Support Us",
   workWithUs: "Work with us",
   untitledDesign42: "/img/untitled-design-4--2@2x.png",
