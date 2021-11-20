@@ -98,8 +98,8 @@ class AboutUs extends React.Component {
             </Group13981>
             <Group13941>
               <FinalLogoPng0111 src={finalLogo_Png0111} />
-              <CRIMINALJUSTICEPOLICEACCOUNTABILTYP src="/img/" />
-            </Group13941>123.png
+              <CRIMINALJUSTICEPOLICEACCOUNTABILTYP src="/img/123.png" />
+            </Group13941>
           </OverlapGroup10>
           <Rectangle33></Rectangle33>
           <FinalLogoPng01111 src={finalLogo_Png01112} />
