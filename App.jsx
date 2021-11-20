@@ -260,7 +260,7 @@ const aboutUsData = {
     image7: "/img/image-6@2x.png",
     aditiPradhan: "Aditi Pradhan",
     text39: "Research Consultant & Lawyer",
-    image8: "/img/image-6@2x.png",
+    image8: "/img/image-6@2x-copy.png",
     harshKinger: "Harsh Kinger",
     text40: "Research Consultant & Lawyer",
     untitledDesign41: "/img/untitled-design-4--1@2x.png",
