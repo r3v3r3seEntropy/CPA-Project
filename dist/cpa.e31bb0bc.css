@@ -299,10 +299,16 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   width: auto;
   overflow: hidden;
   position: relative;
  
+=======
+  overflow: hidden;
+  position: relative;
+  width : auto; 
+>>>>>>> 828d425ae4814c494dae2a8c450dbb9fda175238
 }
 
 
