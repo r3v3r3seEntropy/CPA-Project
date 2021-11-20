@@ -44804,7 +44804,6 @@ var homepageMain1Data = {
   phone3: "04/09/2021",
   rectangle53: "/img/rectangle-53@2x.png",
   readMore6: "READ MORE",
-  recentPosts: "Recent Posts",
   untitledDesign41: "/img/untitled-design-4--1@2x.png",
   workWithUs: "Work with us",
   text105: /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, "If you believe in our approach and work and want to join the movement in any capacity, we would love to hear from you.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Do drop us a line!"),
