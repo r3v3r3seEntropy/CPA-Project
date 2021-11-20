@@ -205,11 +205,11 @@ class HomepageMain1 extends React.Component {
             </FlexRow1>
             <FlexRow2>
               <Group13916 />
-              <READMORE>{readMore}</READMORE>
+              <READMORE><a href="https://form.jotform.com/213232709878463" target="_blank">{readMore}</a></READMORE>
               <Group13916 className={group13916Props.className} />
               <READMORE>{readMore2}</READMORE>
               <Group13916 className={group139162Props.className} />
-              <READMORE>{readMore3}</READMORE>
+              <READMORE><a href="https://form.jotform.com/213232843423044" target="_blank">{readMore3}</a></READMORE>
             </FlexRow2>
           </OverlapGroup10>
           <OverlapGroup11>

@@ -40139,6 +40139,7 @@ var OurWorkMain = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/_react.default.createElement(Vector17, {
         src: "/img/vector-17@2x.svg"
       }), /*#__PURE__*/_react.default.createElement(OverlapGroup8, {
+        className: "animated fadeInUp ease-out-circ d2 a-1",
         style: {
           backgroundImage: "url(".concat(overlapGroup8, ")")
         }
@@ -41410,11 +41411,17 @@ var HomepageMain1 = /*#__PURE__*/function (_React$Component) {
         className: "barlow-semi-bold-abbey-24px"
       }, spanText8), /*#__PURE__*/_react.default.createElement("span", {
         className: "barlow-normal-abbey-24px"
-      }, spanText9)))), /*#__PURE__*/_react.default.createElement(FlexRow2, null, /*#__PURE__*/_react.default.createElement(_Group10.default, null), /*#__PURE__*/_react.default.createElement(READMORE, null, readMore), /*#__PURE__*/_react.default.createElement(_Group10.default, {
+      }, spanText9)))), /*#__PURE__*/_react.default.createElement(FlexRow2, null, /*#__PURE__*/_react.default.createElement(_Group10.default, null), /*#__PURE__*/_react.default.createElement(READMORE, null, /*#__PURE__*/_react.default.createElement("a", {
+        href: "https://form.jotform.com/213232709878463",
+        target: "_blank"
+      }, readMore)), /*#__PURE__*/_react.default.createElement(_Group10.default, {
         className: group13916Props.className
       }), /*#__PURE__*/_react.default.createElement(READMORE, null, readMore2), /*#__PURE__*/_react.default.createElement(_Group10.default, {
         className: group139162Props.className
-      }), /*#__PURE__*/_react.default.createElement(READMORE, null, readMore3))), /*#__PURE__*/_react.default.createElement(OverlapGroup11, null, /*#__PURE__*/_react.default.createElement(OverlapGroup, null, /*#__PURE__*/_react.default.createElement(FeaturedWork, null, latestNews), /*#__PURE__*/_react.default.createElement(_Group9.default, {
+      }), /*#__PURE__*/_react.default.createElement(READMORE, null, /*#__PURE__*/_react.default.createElement("a", {
+        href: "https://form.jotform.com/213232843423044",
+        target: "_blank"
+      }, readMore3)))), /*#__PURE__*/_react.default.createElement(OverlapGroup11, null, /*#__PURE__*/_react.default.createElement(OverlapGroup, null, /*#__PURE__*/_react.default.createElement(FeaturedWork, null, latestNews), /*#__PURE__*/_react.default.createElement(_Group9.default, {
         className: group1388822Props.className
       })), /*#__PURE__*/_react.default.createElement(Rectangle49, {
         src: "/img/rectangle-49@1x.svg"
@@ -42001,7 +42008,7 @@ var Image50 = _styledComponents.default.img(_templateObject48 || (_templateObjec
 
 var Vector30 = _styledComponents.default.img(_templateObject49 || (_templateObject49 = _taggedTemplateLiteral(["\n  width: 1442px;\n  height: 6px;\n  margin-top: 77px;\n"])));
 
-var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  padding-left: 40%;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
+var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  padding-left: 45%;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
 
 var Group1 = _styledComponents.default.img(_templateObject51 || (_templateObject51 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
 
@@ -42360,7 +42367,7 @@ var Image50 = _styledComponents.default.img(_templateObject48 || (_templateObjec
 
 var Vector30 = _styledComponents.default.img(_templateObject49 || (_templateObject49 = _taggedTemplateLiteral(["\n  width: 1442px;\n  height: 6px;\n  margin-top: 77px;\n"])));
 
-var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  padding-left: 40%;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
+var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  padding-left: 45%;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
 
 var Group1 = _styledComponents.default.img(_templateObject51 || (_templateObject51 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
 
@@ -42591,7 +42598,9 @@ var InNews = /*#__PURE__*/function (_React$Component) {
         className: "container-center-horizontal"
       }, /*#__PURE__*/_react.default.createElement("div", {
         className: "in-news screen"
-      }, /*#__PURE__*/_react.default.createElement(Rectangle33, null), /*#__PURE__*/_react.default.createElement(OverlapGroup11, null, /*#__PURE__*/_react.default.createElement(Group14052, null, /*#__PURE__*/_react.default.createElement(InNews1, null, inNews), /*#__PURE__*/_react.default.createElement(Text108, null, text108)), /*#__PURE__*/_react.default.createElement(Articles, null, articles), /*#__PURE__*/_react.default.createElement(_CarouselDesign2.default, {
+      }, /*#__PURE__*/_react.default.createElement(Rectangle33, null), /*#__PURE__*/_react.default.createElement(OverlapGroup11, {
+        className: "animated fadeInUp ease-out-circ d2 a-1"
+      }, /*#__PURE__*/_react.default.createElement(Group14052, null, /*#__PURE__*/_react.default.createElement(InNews1, null, inNews), /*#__PURE__*/_react.default.createElement(Text108, null, text108)), /*#__PURE__*/_react.default.createElement(Articles, null, articles), /*#__PURE__*/_react.default.createElement(_CarouselDesign2.default, {
         data: carousel2
       })), /*#__PURE__*/_react.default.createElement(FinalLogoPng0111, {
         src: finalLogo_Png0111

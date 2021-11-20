@@ -643,7 +643,7 @@ const Vector30 = styled.img`
 const FlexRow = styled.div`
   ${BarlowMediumGray24px}
   margin-top: 37px;
-  padding-left: 40%;
+  padding-left: 45%;
   display: flex;
   align-items: center;
   min-width: 339px;

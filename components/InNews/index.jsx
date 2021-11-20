@@ -136,7 +136,7 @@ class InNews extends React.Component {
       <div className="container-center-horizontal">
         <div className="in-news screen">
           <Rectangle33></Rectangle33>
-          <OverlapGroup11>
+          <OverlapGroup11 className="animated fadeInUp ease-out-circ d2 a-1">
             <Group14052>
               <InNews1>{inNews}</InNews1>
               <Text108>{text108}</Text108>

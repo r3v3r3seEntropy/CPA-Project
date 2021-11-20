@@ -96,7 +96,7 @@ class AboutUs extends React.Component {
                 <span className="barlow-medium-abbey-24px">{spanText3}</span>
               </Text31>
             </Group13981>
-            <Group13941>
+            <Group13941 className="animated fadeInUp d2 a-1">
               <FinalLogoPng0111 src={finalLogo_Png0111} />
               <CRIMINALJUSTICEPOLICEACCOUNTABILTYP src="/img/123.png" />
             </Group13941>

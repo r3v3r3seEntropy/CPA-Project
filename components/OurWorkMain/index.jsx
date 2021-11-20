@@ -124,7 +124,7 @@ class OurWorkMain extends React.Component {
           <SupportUs>{supportUs}</SupportUs>
           <Group src="/img/group-14@2x.svg" />
           <Vector17 src="/img/vector-17@2x.svg" />
-          <OverlapGroup8 style={{ backgroundImage: `url(${overlapGroup8})` }}>
+          <OverlapGroup8 className="animated fadeInUp ease-out-circ d2 a-1" style={{ backgroundImage: `url(${overlapGroup8})` }}>
             <OurWork1>{ourWork2}</OurWork1>
             <Text48>{text48}</Text48>
           </OverlapGroup8>
