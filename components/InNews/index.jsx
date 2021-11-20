@@ -9,8 +9,7 @@ import Group13909 from "../Group13909";
 import Group13921 from "../Group13921";
 import Footer from "../Footer";
 import styled from "styled-components";
-import Carousel from "../Carousel";
-
+import Carousel from '../Carousel';
 
 import {
   PlayfairdisplayBoldWhite36px,
@@ -26,13 +25,8 @@ import {
 } from "../../styledMixins";
 import "./InNews.css";
 
-
 class InNews extends React.Component {
-   
-  
   render() {
-    
-    
     const {
       inNews,
       text108,
@@ -97,21 +91,19 @@ class InNews extends React.Component {
       group13921Props,
       footerProps,
     } = this.props;
-    console.log(group140347Props)
-    const carousel1Component1={
-      bgImg:group14049,
+    console.log(group140347Props);
+    const carousel1Component1 = {
+      bgImg: group14049,
       text117: text117,
       liveLaw2: liveLaw2,
-      image51:image51,
-      image7:image7,
-      image8:image8,
-      image50:image50
-      
+      image51: image51,
+      image7: image7,
+      image8: image8,
+      image50: image50,
     };
-    const carousel1=[]
+    const carousel1 = [];
     carousel1.push(carousel1Component1);
     console.log(carousel1);
-    
 
     return (
       <div className="container-center-horizontal">
@@ -132,7 +124,9 @@ class InNews extends React.Component {
                   <Text109>{text109}</Text109>
                   <Scrollin>{scrollIn}</Scrollin>
                 </OverlapGroup>
-                <OverlapGroup1 style={{ backgroundImage: `url(${overlapGroup1})` }}>
+                <OverlapGroup1
+                  style={{ backgroundImage: `url(${overlapGroup1})` }}
+                >
                   <NewsClick>{newsclick}</NewsClick>
                   <Text110>{text110}</Text110>
                   <Group14034 className={group140342Props.className} />
@@ -161,7 +155,9 @@ class InNews extends React.Component {
                   <Text113>{text113}</Text113>
                   <ThePrint>{thePrint}</ThePrint>
                 </OverlapGroup4>
-                <OverlapGroup5 style={{ backgroundImage: `url(${overlapGroup5})` }}>
+                <OverlapGroup5
+                  style={{ backgroundImage: `url(${overlapGroup5})` }}
+                >
                   <Text114>{text114}</Text114>
                   <Scrollin1>{scrollIn2}</Scrollin1>
                   <Group14034 className={group140346Props.className} />
@@ -191,13 +187,11 @@ class InNews extends React.Component {
             <Group14054>
               <Discussions>{discussions}</Discussions>
               <Carousel data={carousel1}/>
-              
             </Group14054>
-            
+
             <Vector30 src="/img/vector-30-1@1x.svg" />
-            
           </OverlapGroup9>
-          
+
           <Group14055>
             <OverlapGroup8>
               <WorkWithUs>{workWithUs}</WorkWithUs>

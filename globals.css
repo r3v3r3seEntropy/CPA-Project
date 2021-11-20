@@ -5,6 +5,17 @@
 .screen a {
   display: contents;
   text-decoration: none;
+  
+}
+@media only screen and (max-width: 1700px) {
+  html{
+    zoom:90%
+  }
+}
+@media only screen and (max-width: 1500px) {
+  html{
+    zoom:80%
+  }
 }
 
 .container-center-horizontal {
