@@ -39002,7 +39002,7 @@ var AboutUs = /*#__PURE__*/function (_React$Component) {
       }, spanText3))), /*#__PURE__*/_react.default.createElement(Group13941, null, /*#__PURE__*/_react.default.createElement(FinalLogoPng0111, {
         src: finalLogo_Png0111
       }), /*#__PURE__*/_react.default.createElement(CRIMINALJUSTICEPOLICEACCOUNTABILTYP, {
-        src: "/img/criminal-justice---police-accountabilty-project@2x.svg"
+        src: "/img/123.png"
       }))), /*#__PURE__*/_react.default.createElement(Rectangle33, null), /*#__PURE__*/_react.default.createElement(FinalLogoPng01111, {
         src: finalLogo_Png01112
       }), /*#__PURE__*/_react.default.createElement(Rectangle41, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
@@ -42001,13 +42001,13 @@ var Image50 = _styledComponents.default.img(_templateObject48 || (_templateObjec
 
 var Vector30 = _styledComponents.default.img(_templateObject49 || (_templateObject49 = _taggedTemplateLiteral(["\n  width: 1442px;\n  height: 6px;\n  margin-top: 77px;\n"])));
 
-var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  \n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
+var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  padding-left: 40%;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
 
 var Group1 = _styledComponents.default.img(_templateObject51 || (_templateObject51 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
 
-var OverlapGroup13 = _styledComponents.default.div(_templateObject52 || (_templateObject52 = _taggedTemplateLiteral(["\n  width: 32px;\n  height: 32px;\n  position: relative;\n  margin-left: 28px;\n  border-radius: 16px;\n"])));
+var OverlapGroup13 = _styledComponents.default.div(_templateObject52 || (_templateObject52 = _taggedTemplateLiteral(["\n  width: 32px;\n  height: 32px;\n  position: relative;\n  margin: 28px;\n  border-radius: 16px;\n"])));
 
-var Ellipse15 = _styledComponents.default.div(_templateObject53 || (_templateObject53 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 32px;\n  height: 32px;\n  top: 0;\n  left: 0;\n  background-color: var(--westar);\n  border-radius: 16px;\n"])));
+var Ellipse15 = _styledComponents.default.div(_templateObject53 || (_templateObject53 = _taggedTemplateLiteral(["\n  \n  width: 32px;\n  height: 32px;\n  top: 0;\n  left: 0;\n  background-color: var(--westar);\n  border-radius: 16px;\n  right:28;\n"])));
 
 var Number = _styledComponents.default.div(_templateObject54 || (_templateObject54 = _taggedTemplateLiteral(["\n  ", "\n  position: absolute;\n  top: 1px;\n  left: 11px;\n  letter-spacing: 0;\n"])), _styledMixins.BarlowSemiBoldAbbey24px);
 
@@ -42019,7 +42019,7 @@ var Number3 = _styledComponents.default.div(_templateObject57 || (_templateObjec
 
 var Text116 = _styledComponents.default.div(_templateObject58 || (_templateObject58 = _taggedTemplateLiteral(["\n  min-height: 29px;\n  margin-left: 24px;\n  margin-bottom: 1px;\n  min-width: 27px;\n  letter-spacing: 0;\n"])));
 
-var Group2 = _styledComponents.default.img(_templateObject59 || (_templateObject59 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-left: 40px;\n  margin-bottom: 0.79px;\n"])));
+var Group2 = _styledComponents.default.img(_templateObject59 || (_templateObject59 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  \n  margin-bottom: 0.79px;\n"])));
 
 var Group14055 = _styledComponents.default.div(_templateObject60 || (_templateObject60 = _taggedTemplateLiteral(["\n  width: 1920px;\n  z-index: 4;\n  display: flex;\n  flex-direction: column;\n  padding: 145px 262px;\n  align-items: flex-start;\n  min-height: 675px;\n  background-color: var(--spring-wood-2);\n"])));
 
@@ -42360,11 +42360,11 @@ var Image50 = _styledComponents.default.img(_templateObject48 || (_templateObjec
 
 var Vector30 = _styledComponents.default.img(_templateObject49 || (_templateObject49 = _taggedTemplateLiteral(["\n  width: 1442px;\n  height: 6px;\n  margin-top: 77px;\n"])));
 
-var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
+var FlexRow = _styledComponents.default.div(_templateObject50 || (_templateObject50 = _taggedTemplateLiteral(["\n  ", "\n  margin-top: 37px;\n  padding-left: 40%;\n  display: flex;\n  align-items: center;\n  min-width: 339px;\n"])), _styledMixins.BarlowMediumGray24px);
 
 var Group1 = _styledComponents.default.img(_templateObject51 || (_templateObject51 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
 
-var OverlapGroup13 = _styledComponents.default.div(_templateObject52 || (_templateObject52 = _taggedTemplateLiteral(["\n  width: 32px;\n  height: 32px;\n  position: relative;\n  margin-left: 28px;\n  border-radius: 16px;\n"])));
+var OverlapGroup13 = _styledComponents.default.div(_templateObject52 || (_templateObject52 = _taggedTemplateLiteral(["\n  width: 32px;\n  height: 32px;\n  position: relative;\n  margin: 28px;\n  border-radius: 16px;\n"])));
 
 var Ellipse15 = _styledComponents.default.div(_templateObject53 || (_templateObject53 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 32px;\n  height: 32px;\n  top: 0;\n  left: 0;\n  background-color: var(--westar);\n  border-radius: 16px;\n"])));
 
@@ -42378,7 +42378,7 @@ var Number3 = _styledComponents.default.div(_templateObject57 || (_templateObjec
 
 var Text116 = _styledComponents.default.div(_templateObject58 || (_templateObject58 = _taggedTemplateLiteral(["\n  min-height: 29px;\n  margin-left: 24px;\n  margin-bottom: 1px;\n  min-width: 27px;\n  letter-spacing: 0;\n"])));
 
-var Group2 = _styledComponents.default.img(_templateObject59 || (_templateObject59 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-left: 40px;\n  margin-bottom: 0.79px;\n"])));
+var Group2 = _styledComponents.default.img(_templateObject59 || (_templateObject59 = _taggedTemplateLiteral(["\n  width: 18px;\n  height: 14px;\n  margin-bottom: 0.79px;\n"])));
 
 var Group14055 = _styledComponents.default.div(_templateObject60 || (_templateObject60 = _taggedTemplateLiteral(["\n  width: 1920px;\n  z-index: 4;\n  display: flex;\n  flex-direction: column;\n  padding: 145px 262px;\n  align-items: flex-start;\n  min-height: 675px;\n  background-color: var(--spring-wood-2);\n"])));
 
@@ -44832,7 +44832,7 @@ var aboutUsData = {
   image7: "/img/image-6@2x.png",
   aditiPradhan: "Aditi Pradhan",
   text39: "Research Consultant & Lawyer",
-  image8: "/img/image-6@2x.png",
+  image8: "/img/image-6@2x-copy.png",
   harshKinger: "Harsh Kinger",
   text40: "Research Consultant & Lawyer",
   untitledDesign41: "/img/untitled-design-4--1@2x.png",
@@ -45147,11 +45147,11 @@ var homepageMain1Data = {
   inLatestNews: "In Latest News",
   text93: "Why Madhya Pradesh’s new liquor law fails to address casteist, colonial policing",
   phone: "09/09/2021",
-  image5: "/img/image-4@2x.png",
+  image5: "/img/picture2.png",
   readMore4: "READ MORE",
   text94: "Over 64 % of Accused under Excise Laws are SC/ST, Nomadic Tribes in MP",
   phone2: "09/09/2021",
-  image6: "/img/image-5@2x.png",
+  image6: "/img/picture3.png",
   readMore5: "READ MORE",
   text95: "Construction(s) of Female Criminality: Gender, Caste and State Violence",
   phone3: "04/09/2021",
@@ -45730,7 +45730,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42527" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41933" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

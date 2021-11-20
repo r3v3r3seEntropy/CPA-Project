@@ -8,7 +8,6 @@ import Group13888 from "../Group13888";
 import Group13909 from "../Group13909";
 import Group13921 from "../Group13921";
 
-
 import {
   PlayfairdisplayBoldWhite36px,
   FirasansSemiBoldAbbey28px,
@@ -24,20 +23,18 @@ import {
 
 class CarouselDesign1 extends React.Component {
   constructor(props) {
-   
-   super(props);
+    super(props);
     this.state = {
       carouselData: props.data,
       presentInd: 0,
       presentElement: props.data[0],
     };
   }
-  
+
   goToNextSlide = () => {
     let nextInd = this.state.presentInd + 1;
-    let si=this.state.carouselData.length
-    if (nextInd < si) 
-    {
+    let si = this.state.carouselData.length;
+    if (nextInd < si) {
       this.setState({
         presentInd: nextInd,
         presentElement: this.state.carouselData[nextInd],
@@ -120,41 +117,46 @@ class CarouselDesign1 extends React.Component {
       group13921Props,
       footerProps,
     } = this.props;
-    console.log(group140347Props)
-      return(
-    <div>
-      <Group14051>
-        <Group14049
-          style={{ backgroundImage: `url(${this.state.presentElement.bgImg})` }}
-        >
-          <Text117>{this.state.presentElement.text117}</Text117>
-          <Scrollin1>{this.state.presentElement.liveLaw2}</Scrollin1>
-          <Group14034 className="group-14024-1" />
-        </Group14049>
-        <FlexCol>
-          <Image51 src={this.state.presentElement.image51} />
-          <OverlapGroup7>
-            <Rectangle691></Rectangle691>
-            <Image2 src={this.state.presentElement.image7} />
-            <Image3 src={this.state.presentElement.image8} />
-            <Image50 src={this.state.presentElement.image50} />
-          </OverlapGroup7>
-        </FlexCol>
-      </Group14051>
-      <FlexRow>
-        <button onClick={this.goToPrevSlide}>
-          <Group1 src="/img/group-39@2x.svg" />
-        </button>
-        <OverlapGroup13>
-          <Ellipse15></Ellipse15>
-          <Number>{this.state.presentInd+1}</Number>
-        </OverlapGroup13>
-        
-        <button onClick={this.goToNextSlide}>
-          <Group2 src="/img/group-40@2x.svg" />
-        </button>
-      </FlexRow>
-    </div>);
+    console.log(group140347Props);
+    return (
+      <div>
+        <Group14051>
+          <Group14049
+            style={{
+              backgroundImage: `url(${this.state.presentElement.bgImg})`,
+            }}
+          >
+            <Text117>{this.state.presentElement.text117}</Text117>
+            <Scrollin1>{this.state.presentElement.liveLaw2}</Scrollin1>
+            <Group14034 className="group-14024-1" />
+          </Group14049>
+          <FlexCol>
+            <Image51 src={this.state.presentElement.image51} />
+            <OverlapGroup7>
+              <Rectangle691></Rectangle691>
+              <Image2 src={this.state.presentElement.image7} />
+              <Image3 src={this.state.presentElement.image8} />
+              <Image50 src={this.state.presentElement.image50} />
+            </OverlapGroup7>
+          </FlexCol>
+        </Group14051>
+        <FlexRow>
+         
+            <button onClick={this.goToPrevSlide}>
+              <Group1 src="/img/group-39@2x.svg" />
+            </button>
+            <OverlapGroup13>
+              <Ellipse15></Ellipse15>
+              <Number>{this.state.presentInd + 1}</Number>
+            </OverlapGroup13>
+
+            <button onClick={this.goToNextSlide}>
+              <Group2 src="/img/group-40@2x.svg" />
+            </button>
+         
+        </FlexRow>
+      </div>
+    );
   }
 }
 const Rectangle33 = styled.div`
@@ -609,7 +611,7 @@ const Vector30 = styled.img`
 const FlexRow = styled.div`
   ${BarlowMediumGray24px}
   margin-top: 37px;
-  
+  padding-left: 40%;
   display: flex;
   align-items: center;
   min-width: 339px;
@@ -625,18 +627,19 @@ const OverlapGroup13 = styled.div`
   width: 32px;
   height: 32px;
   position: relative;
-  margin-left: 28px;
+  margin: 28px;
   border-radius: 16px;
 `;
 
 const Ellipse15 = styled.div`
-  position: absolute;
+  
   width: 32px;
   height: 32px;
   top: 0;
   left: 0;
   background-color: var(--westar);
   border-radius: 16px;
+  right:28;
 `;
 
 const Number = styled.div`
@@ -682,7 +685,7 @@ const Text116 = styled.div`
 const Group2 = styled.img`
   width: 18px;
   height: 14px;
-  margin-left: 40px;
+  
   margin-bottom: 0.79px;
 `;
 

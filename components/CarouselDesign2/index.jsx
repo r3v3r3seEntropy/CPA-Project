@@ -643,7 +643,7 @@ const Vector30 = styled.img`
 const FlexRow = styled.div`
   ${BarlowMediumGray24px}
   margin-top: 37px;
-
+  padding-left: 40%;
   display: flex;
   align-items: center;
   min-width: 339px;
@@ -659,7 +659,7 @@ const OverlapGroup13 = styled.div`
   width: 32px;
   height: 32px;
   position: relative;
-  margin-left: 28px;
+  margin: 28px;
   border-radius: 16px;
 `;
 
@@ -716,7 +716,6 @@ const Text116 = styled.div`
 const Group2 = styled.img`
   width: 18px;
   height: 14px;
-  margin-left: 40px;
   margin-bottom: 0.79px;
 `;
 
